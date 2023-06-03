@@ -1,0 +1,25 @@
+.nav_bar {  /* main nav bar*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 55px 90px 0px 90px;
+}
+
+.nav_item {  /* every individual item in navbar*/
+    padding : 12px 8px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 200;
+}
+.nav_item:hover{
+    color:#2874f0;
+}
+
+.nav_item > p{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}

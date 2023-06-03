@@ -2,16 +2,16 @@
 // data for navgation bar
 export const navData = [
     { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT0arnFsxWrxtVkGXrvzNBS6KAIF5LLyX4-A&usqp=CAU', text: 'Fiction', name:"Fiction" },
-    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS58uCOFmA5NZfFxTn-QcoCsf2o2yck2a8C1A&usqp=CAU', text: 'Biography', name:"Biography" },
-    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSam4thQJIMAsXYfI2UwEnTCeNUUkRx9xd8Ng&usqp=CAU', text: 'Mistory' , name:"Mistory" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyDH2xH6TgG1gUNNW08vEJdIJBFjuUwm0ICA&usqp=CAU', text: 'Fantasy', name:"fantasy" },
     { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4agaN9f5NW1nVQgafGUC8oPieU4h8_vc4Zw&usqp=CAU', text: 'History' ,name:"History" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS58uCOFmA5NZfFxTn-QcoCsf2o2yck2a8C1A&usqp=CAU', text: 'Biography', name:"Biography" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRejyaxO8plwCgtmlU4IPPnOSErHleoNK5WZw&usqp=CAU', text: 'Exam', name:"exam" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSam4thQJIMAsXYfI2UwEnTCeNUUkRx9xd8Ng&usqp=CAU', text: 'Mistory' , name:"Mistory" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtqY16bfobbjivsZb2u6WEgzJ3C8PN0txWnA&usqp=CAU', text: 'Getting Rich', name:"rich" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPAKLxgjoF0NbytCaf4B5qhy9PcjgdcbT95w&usqp=CAU', text: 'Health', name:"health" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDMTeWl95cjuHuvwVyivNsBKP9wRYJVp26Zg&usqp=CAU', text: 'success', name:"success" },
     { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnbMZzwuIoeXHWr6GjVc0M8SuStwfaabE-TA&usqp=CAU', text: 'Romance', name:"romance" },
-    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlxXDwWw4qRSL2MqB6-k9Gm1riDpMrvTP9_A&usqp=CAU', text: 'Horror', name:"Horror" },
-    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRejyaxO8plwCgtmlU4IPPnOSErHleoNK5WZw&usqp=CAU', text: 'exam', name:"exam" },
-    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtqY16bfobbjivsZb2u6WEgzJ3C8PN0txWnA&usqp=CAU', text: 'Money & Getting Rich', name:"rich" },
-    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyDH2xH6TgG1gUNNW08vEJdIJBFjuUwm0ICA&usqp=CAU', text: 'Fantasy & Adventure', name:"fantasy" },
-    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Y3DQMD59p_DmX3d9xyG4xOJgv_2QTgtPgw&usqp=CAU', text: 'Health', name:"health" },
-    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDMTeWl95cjuHuvwVyivNsBKP9wRYJVp26Zg&usqp=CAU', text: 'success', name:"success" }
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlxXDwWw4qRSL2MqB6-k9Gm1riDpMrvTP9_A&usqp=CAU', text: 'Horror', name:"Horror" }
 ];
 
 

@@ -2,7 +2,7 @@ import './Home.css';
 import React, {useEffect} from 'react';
 
 //component import 
-// import Navbar from './Navbar/Navber';
+import Navbar from './Navbar/Navber';
 // import Banner from './Banner/Banner';
 // import Slide from './Slide/Slide';
 
@@ -38,7 +38,7 @@ const Home = ()=>{
 
     return (
         <>
-            {/* <Navbar/> */}
+            <Navbar/>
             <div className="container">
                 {/* <Banner />
                 <Slide 
