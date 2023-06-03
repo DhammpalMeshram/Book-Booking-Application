@@ -1,0 +1,91 @@
+
+.header_1 {   /* filpcart logo and the text container*/
+    margin-left: 12%;
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+}
+.header_1 a> img {  /* flipcart logo*/
+    width: 75px;
+}
+.header_1 > p {  /* text below the flipcart logo*/
+    font-size: 11px;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+.header_1 > p >span {   /* yellow text */
+    color : #ffe500;
+    margin-right: 2px;
+    font-size: 11px;
+    font-family: inherit;
+}
+
+.header_1 > p:hover{  /*text below filpcart logo*/
+    text-decoration: underline;
+}
+
+
+.header_2 { /* input and serch container*/
+    background-color: #fff;
+    width: 36%;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_2 > input { /* serch bar*/
+    width: 90%;
+    padding: 3px;
+    font-size: unset;  /* sol that it will take font style of parent*/
+    border :0;  /* to hide border*/
+    outline: 0px;  /* to hide border when it is in focus*/
+    font-size: 13px;
+
+}
+.header_2 > svg {  /* serch icon*/
+    color : #2874f0;
+    cursor: pointer;
+    
+}
+
+.header_3{  /*log in button container*/
+    margin-right: 3%;
+    margin-left: 2%;
+}
+
+.header_3 > button {  /* log in button*/
+    color : #2874f0;
+    background-color: #fff;
+    padding: 7px 40px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.header_4{   /* become a seller container*/
+    margin-right: 3%;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.header_5, .header_6{  /* more container and cart container */
+    margin-right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
