@@ -13,6 +13,7 @@ import Header from './Components/Header/Header';
 // import Payment from './Components/Payment/Payment';
 // import NotFound from './Components/NotFound/NotFound';
 // import CategoryPage from './Components/CategoryPage/CategoryPage';
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   // localStorage.setItem('cartPorducts', JSON.stringify([]));
@@ -32,6 +33,7 @@ function App() {
               <Route path='*' element={<NotFound />}/> */}
             </Routes>
           </main>
+          <Footer/>
         </BrowserRouter>
       // </DataProvider>
   );
