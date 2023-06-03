@@ -1,0 +1,8 @@
+.react-multi-carousel-list {
+    position: relative;
+}
+
+.react-multi-carousel-track > li >img{
+    width: 100%;
+    height: 280px;
+}

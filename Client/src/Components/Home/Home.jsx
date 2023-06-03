@@ -3,7 +3,8 @@ import React, {useEffect} from 'react';
 
 //component import 
 import Navbar from './Navbar/Navber';
-// import Banner from './Banner/Banner';
+import Banner from './Banner/Banner';
+import Filter from "./Filter/Filter";
 // import Slide from './Slide/Slide';
 
 //redux imports
@@ -40,7 +41,9 @@ const Home = ()=>{
         <>
             <Navbar/>
             <div className="container">
-                {/* <Banner />
+                <Banner /> 
+                <Filter/>
+                {/*
                 <Slide 
                     heading = "Best of Electronics"
                     img={elect}

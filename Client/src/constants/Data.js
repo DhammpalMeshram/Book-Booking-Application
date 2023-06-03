@@ -19,22 +19,23 @@ export const navData = [
 // data for latest books in trend
 export const bannerData = [
     { id: 1, url: 'https://c4.wallpaperflare.com/wallpaper/413/495/729/game-of-thrones-wallpaper-preview.jpg' },
-    { id: 2, url: 'https://c4.wallpaperflare.com/wallpaper/750/66/360/the-lord-of-the-rings-the-lord-of-the-rings-the-fellowship-of-the-ring-artwork-fantasy-art-movies-hd-wallpaper-preview.jpg' },
+    { id: 2, url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkhxb_r7YO2rA8wwvStshhj8G3wj10sL_EFA&usqp=CAU' },
+    { id: 5, url: 'https://c4.wallpaperflare.com/wallpaper/859/280/18/movies-harry-potter-harry-potter-and-the-order-of-the-phoenix-the-order-men-with-glasses-1280x960-entertainment-movies-hd-art-wallpaper-preview.jpg' },
     { id: 3, url: 'https://c4.wallpaperflare.com/wallpaper/797/633/218/tyrion-lannister-game-of-thrones-wallpaper-preview.jpg' },
-    { id: 4, url: 'https://c4.wallpaperflare.com/wallpaper/620/105/243/the-lord-of-the-rings-the-hobbit-hd-the-hobbit-movie-poster-wallpaper-preview.jpg' },
-    { id: 5, url: 'https://c4.wallpaperflare.com/wallpaper/859/280/18/movies-harry-potter-harry-potter-and-the-order-of-the-phoenix-the-order-men-with-glasses-1280x960-entertainment-movies-hd-art-wallpaper-preview.jpg' }
+    { id: 4, url: 'https://c4.wallpaperflare.com/wallpaper/620/105/243/the-lord-of-the-rings-the-hobbit-hd-the-hobbit-movie-poster-wallpaper-preview.jpg' }
+    
 ]
 
 
 
 
 // list of authors
-const authorsArray = ["A.K. Gandhi","Agatha Christie","Blake Olivie","Brown Dan","Carter Eva","DR A P J Abdul Kalam","Daniel Kahneman","Du Maurier Daphne","Genric Author","George S. Clason","Gillian Flynn","Graham Benjamin","Haynes Natalie","Hill Napoleon","Isaacson Walter","J. R. R. Tolkien","Lewis C. S.","Martin George R. R.","Obama Michelle","Prose Nita","R. Stephen Covey","Riley Lucinda","Robbins Anthony","Robbins Tony","Robert T. Kiyosaki","Rowling J. K.","Thomas J","Yousafzai Malala"]
+export const authorsArray = ["A.K. Gandhi","Agatha Christie","Blake Olivie","Brown Dan","Carter Eva","DR A P J Abdul Kalam","Daniel Kahneman","Du Maurier Daphne","Genric Author","George S. Clason","Gillian Flynn","Graham Benjamin","Haynes Natalie","Hill Napoleon","Isaacson Walter","J. R. R. Tolkien","Lewis C. S.","Martin George R. R.","Obama Michelle","Prose Nita","R. Stephen Covey","Riley Lucinda","Robbins Anthony","Robbins Tony","Robert T. Kiyosaki","Rowling J. K.","Thomas J","Yousafzai Malala"]
 
 
 
 //list of sellers
-const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","BestsellingBooks","Dunagiribookstore","FINDINGBOOKS1","GlobalRetailVentures","krishnastoreCompany","Micybook","NSPRetail","NEOSELLERS","OverseasOnlineShop","Sumitbookstor1","SUGSHAANnet","SrishtiPD","Samaoppai","Seagroups","Repro Books on Demand","TDVentures","VIKASONNET",]
+export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","BestsellingBooks","Dunagiribookstore","FINDINGBOOKS1","GlobalRetailVentures","krishnastoreCompany","Micybook","NSPRetail","NEOSELLERS","OverseasOnlineShop","Sumitbookstor1","SUGSHAANnet","SrishtiPD","Samaoppai","Seagroups","Repro Books on Demand","TDVentures","VIKASONNET",]
 
 
 /* Sample product Schema
@@ -63,3 +64,4 @@ const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","BestsellingBook
 
     */
     
+

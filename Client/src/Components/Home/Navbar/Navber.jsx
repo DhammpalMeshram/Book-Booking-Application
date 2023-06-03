@@ -4,6 +4,8 @@ import React from 'react';
 import { useNavigate } from 'react-router';
 import { navData } from '../../../Constants/Data';
 
+
+
 const Navbar = ()=>{
     const navigate = useNavigate();
     
@@ -18,17 +20,17 @@ const Navbar = ()=>{
         // navigate(`/${serchname}`);
     }
 
-    return (
+    return (      
         <div className='nav_bar'>
-            {   navData.map(data=>{
-                    return(
-                        <div key={data.text} className={'nav_item'} name={data.name} onClick={onCategoryClick}>
-                            <img src={data.url} alt="navImage" width={75} height={100} name={data.name}/>
-                            <p id={data.name}>{data.text}</p>
-                        </div>
-                    )
-                })
-            }
+        {   navData.map(data=>{
+                return(
+                    <div key={data.text} className={'nav_item'} name={data.name} onClick={onCategoryClick}>
+                        <img src={data.url} alt="navImage" width={75} height={100} name={data.name}/>
+                        <p id={data.name}>{data.text}</p>
+                    </div>
+                )
+            })
+        }
         </div>
     )
 }
