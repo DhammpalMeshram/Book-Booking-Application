@@ -8,6 +8,9 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+
+
 
 //global state imports
 // import { useSelector} from 'react-redux';
@@ -126,7 +129,8 @@ const Header =()=>{
             }
             {/* {   !myContext.checkout && */
                 <div className='header_4'>
-                    <p>Become a Seller</p>
+                    <AttachMoneyIcon/>
+                    <p>Sell Your Books</p>
                 </div>
             }
             {/* {   !myContext.checkout && */
@@ -140,9 +144,9 @@ const Header =()=>{
                 <div className='header_6'>
 
                     <ShoppingCartIcon/>
-                    {/* <Badge badgeContent={cartItems.length} color='secondary'>
+                    {/* <Badge badgeContent={cartItems.length} color='secondary'> */}
                         <span>Cart</span>
-                    </Badge> */}
+                    {/* </Badge> */}
                 </div>
             }
 

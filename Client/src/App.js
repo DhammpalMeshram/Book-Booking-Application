@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //component import
 import Header from './Components/Header/Header';
-// import Home from './Components/Home/Home';
+import Home from './Components/Home/Home';
 // import DataProvider from './context/DataProvider';
 // import DetailsPage from './Components/DetailsPage/DetailsPage';
 // import Cart from './Components/Cart/Cart';
@@ -24,8 +24,8 @@ function App() {
           <Header/>
           <main style={{marginTop:55}}>
             <Routes>
-              {/* <Route path='/' element={<Home/>}/>
-              <Route path='/product/:id' element={<DetailsPage/>}/>
+              <Route path='/' element={<Home/>}/>
+              {/*<Route path='/product/:id' element={<DetailsPage/>}/>
               <Route path= '/cart' element= {<Cart/>}/>
               <Route path ='/emptyCart' element={<EmptyCart/>}/>
               <Route path ="/payment" element={<Payment/>}/>

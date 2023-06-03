@@ -61,9 +61,14 @@
 }
 
 .header_4{   /* become a seller container*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 5px; */
     margin-right: 3%;
     font-weight: 600;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .header_5, .header_6{  /* more container and cart container */
