@@ -1,0 +1,13 @@
+.movieCard{
+    text-decoration: none;
+    display: inline-flex;
+    margin: 5px;
+    border: 2px gray solid;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.movieCard img {
+    width: 200px;
+    height: 300px;
+}

@@ -4,18 +4,16 @@ import React, {useEffect} from 'react';
 //component import 
 import Navbar from './Navbar/Navber';
 import Banner from './Banner/Banner';
-import Filter from "./Filter/Filter";
-// import Slide from './Slide/Slide';
+import Filter from "./Filter/Filter"
+import BookCard from './BookCard/BookCard'
+
 
 //redux imports
 // import { getAllProducts } from '../../redux/actions/productActions';
 // import { useDispatch, useSelector } from 'react-redux';
 
-//import of requred images
-import elect from './electronics.png';
-import tedy from './teddy.png';
-import style from './style.png';
-import furniture from './furniture.png'
+//import of constant
+import { products } from '../../Constants/Data';
 
 
 const Home = ()=>{
@@ -43,42 +41,12 @@ const Home = ()=>{
             <div className="container">
                 <Banner /> 
                 <Filter/>
-                {/*
-                <Slide 
-                    heading = "Best of Electronics"
-                    img={elect}
-                    products={electonicsCollection}                
-                />
-                <Slide 
-                    heading = "Beauty, Food, Toys & more"
-                    img={tedy}
-                    products={sportsCollection}                
-                />
-                <Slide 
-                    heading = "Home & Kitchen Essentials"
-                    img={furniture}
-                    products={homeCollection}                
-                />
-                <Slide 
-                    heading = "Fashion Top Deals"
-                    img={style}
-                    products={styleCollection}                
-                />
-                <Slide 
-                    heading = "Sports, Healthecare & more"
-                    img={tedy}
-                    products={sportsCollection}                
-                />
-                <Slide 
-                    heading = "Top Deals"
-                    img={style}
-                    products={electonicsCollection}                
-                />
-                <Slide 
-                    heading = "Books, Toys & more"
-                    img={tedy}
-                    products={styleCollection}                
-                /> */}
+            </div>
+            <div id='movieContainer'>
+                {
+                    products.map(item=><BookCard product={item} key={item.id} />)
+                }
+
             </div>
         </>
     )
