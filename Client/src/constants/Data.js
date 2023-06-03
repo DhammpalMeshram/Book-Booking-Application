@@ -1,3 +1,32 @@
+// const logoURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png';
+// const subURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png';
+
+
+export const navData = [
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT0arnFsxWrxtVkGXrvzNBS6KAIF5LLyX4-A&usqp=CAU', text: 'Fiction', name:"Fiction" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS58uCOFmA5NZfFxTn-QcoCsf2o2yck2a8C1A&usqp=CAU', text: 'Biography', name:"Biography" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSam4thQJIMAsXYfI2UwEnTCeNUUkRx9xd8Ng&usqp=CAU', text: 'Mistory' , name:"Mistory" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4agaN9f5NW1nVQgafGUC8oPieU4h8_vc4Zw&usqp=CAU', text: 'History' ,name:"History" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnbMZzwuIoeXHWr6GjVc0M8SuStwfaabE-TA&usqp=CAU', text: 'Romance', name:"romance" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlxXDwWw4qRSL2MqB6-k9Gm1riDpMrvTP9_A&usqp=CAU', text: 'Horror', name:"Horror" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRejyaxO8plwCgtmlU4IPPnOSErHleoNK5WZw&usqp=CAU', text: 'exam', name:"exam" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtqY16bfobbjivsZb2u6WEgzJ3C8PN0txWnA&usqp=CAU', text: 'Money & Getting Rich', name:"rich" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyDH2xH6TgG1gUNNW08vEJdIJBFjuUwm0ICA&usqp=CAU', text: 'Fantasy & Adventure', name:"fantasy" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Y3DQMD59p_DmX3d9xyG4xOJgv_2QTgtPgw&usqp=CAU', text: 'Health', name:"health" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDMTeWl95cjuHuvwVyivNsBKP9wRYJVp26Zg&usqp=CAU', text: 'success', name:"success" }
+];
+
+
+
+
+export const bannerData = [
+    { id: 1, url: 'https://c4.wallpaperflare.com/wallpaper/413/495/729/game-of-thrones-wallpaper-preview.jpg' },
+    { id: 2, url: 'https://c4.wallpaperflare.com/wallpaper/750/66/360/the-lord-of-the-rings-the-lord-of-the-rings-the-fellowship-of-the-ring-artwork-fantasy-art-movies-hd-wallpaper-preview.jpg' },
+    { id: 3, url: 'https://c4.wallpaperflare.com/wallpaper/797/633/218/tyrion-lannister-game-of-thrones-wallpaper-preview.jpg' },
+    { id: 4, url: 'https://c4.wallpaperflare.com/wallpaper/620/105/243/the-lord-of-the-rings-the-hobbit-hd-the-hobbit-movie-poster-wallpaper-preview.jpg' },
+    { id: 5, url: 'https://c4.wallpaperflare.com/wallpaper/859/280/18/movies-harry-potter-harry-potter-and-the-order-of-the-phoenix-the-order-men-with-glasses-1280x960-entertainment-movies-hd-art-wallpaper-preview.jpg' }
+]
+
 
 
 export const products = [
@@ -188,7 +217,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Yousafzai Malala",
         seller : "AmazingBuy",
-        type : ['Biography','I Am Malala',"Yousafzai Malala","AmazingBuy",], 
+        type : ['Biography'], 
     },
     { 
         id: 'product10',
@@ -209,7 +238,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Obama Michelle",
         seller : "Repro Books on Demand",
-        type : ['Biography','Becoming',"Obama Michelle","Repro Books on Demand",], 
+        type : ['Biography'], 
     },
     { 
         id: 'product11',
@@ -230,7 +259,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Gillian Flynn",
         seller : "Amanbooksmart",
-        type : ['Mistory','Gone Girl', "Gillian Flynn","Amanbooksmart"], 
+        type : ['Mistory'], 
     },
     { 
         id: 'product12',
@@ -251,7 +280,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Agatha Christie",
         seller : "Dunagiribookstore",
-        type : ['Mistory','Murder On The Orient Express', "Agatha Christie","Dunagiribookstore"], 
+        type : ['Mistory'], 
     },
     { 
         id: 'product13',
@@ -272,7 +301,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Brown Dan",
         seller : "NSPRetail",
-        type : ['Mistory','The Da Vinci Code',"Brown Dan","NSPRetail"], 
+        type : ['Mistory'], 
     },
     { 
         id: 'product14',
@@ -293,7 +322,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Du Maurier Daphne",
         seller : "AmazingBuy",
-        type : ['Mistory','Rebecca', "Du Maurier Daphne","AmazingBuy"], 
+        type : ['Mistory'], 
     },
     { 
         id: 'product15',
@@ -314,7 +343,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Prose Nita",
         seller : "BOOKSWAGONN",
-        type : ['Mistory','The Maid',"Prose Nita","BOOKSWAGONN"], 
+        type : ['Mistory'], 
     },
     { 
         id: 'product16',
@@ -335,7 +364,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Robert T. Kiyosaki",
         seller : "SUGSHAANnet",
-        type : ['money','Rich Dad Poor Dad',"Robert T. Kiyosaki","SUGSHAANnet"],
+        type : ['money'],
     },
     { 
         id: 'product17',
@@ -356,7 +385,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Graham Benjamin",
         seller : "krishnastoreCompany",
-        type : ['money','The Intelligent Investor',"Graham Benjamin","krishnastoreCompany"],
+        type : ['money'],
     },
     { 
         id: 'product18',
@@ -377,7 +406,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "George S. Clason",
         seller : "TDVentures",
-        type : ['money','The Richest Man in Babylon',"George S. Clason","TDVentures"],
+        type : ['money'],
     },
     { 
         id: 'product19',
@@ -398,7 +427,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Thomas J",
         seller : "Seagroups",
-        type : ['money','The Millionaire Next Door',"Thomas J","Seagroups"],
+        type : ['money'],
     },
     { 
         id: 'product20',
@@ -419,7 +448,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Robbins Tony",
         seller : "VIKASONNET",
-        type : ['money','Money Master the Game',"Robbins Tony","VIKASONNET"],
+        type : ['money'],
     },
     { 
         id: 'product21',
@@ -440,7 +469,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Hill Napoleon",
         seller : "SrishtiPD",
-        type : ['success','Think and Grow Rich',"Hill Napoleon","SrishtiPD"],
+        type : ['success'],
     },
     { 
         id: 'product22',
@@ -461,7 +490,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Daniel Kahneman",
         seller : "FINDINGBOOKS1",
-        type : ['success','Thinking, Fast And Slow',"Daniel Kahneman","FINDINGBOOKS1"],
+        type : ['success'],
     },
     { 
         id: 'product23',
@@ -482,7 +511,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "R. Stephen Covey",
         seller : "Seagroups",
-        type : ['success',`The 7 Habits Of Highly Effective People`,"R. Stephen Covey","Seagroups"],
+        type : ['success'],
     },
     { 
         id: 'product24',
@@ -503,7 +532,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Robbins Anthony",
         seller : "OverseasOnlineShop",
-        type : ['success',`Awaken the Giant within`,"Robbins Anthony","OverseasOnlineShop"],
+        type : ['success'],
     },
     { 
         id: 'product25',
@@ -524,14 +553,14 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Genric Author",
         seller : "Micybook",
-        type : ['success',`The Power Of Habit`,"Genric Author","Micybook"],
+        type : ['success'],
     },
     { 
         id: 'product26',
         url: 'https://rukminim1.flixcart.com/image/612/612/l5jxt3k0/book/j/h/p/george-r-r-martin-s-a-game-of-thrones-5-book-boxed-set-song-of-original-imagg6u2zeb6ayfy.jpeg?q=70',
         detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kjlrb0w0-0/book/h/w/c/a-game-of-thrones-original-imafz53hgt9xqevz.jpeg?q=70', 
         title: {
-            shortTitle: `Game of Thrones`,
+            shortTitle: `Kid's Clothing`,
             longTitle: `'George R. R. Martin's A Game of Thrones 5-Book Boxed Set (Song of Ice and Fire Series)  (English, Paperback, Martin George R. R.)`
         }, 
         price: {
@@ -545,7 +574,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Martin George R. R.",
         seller : "BOOKSWAGONN",
-        type : ['fantasy',"Game of Thrones","Martin George R. R.","BOOKSWAGONN"],
+        type : ['fantasy'],
     },
     { 
         id: 'product27',
@@ -566,7 +595,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "J. R. R. Tolkien",
         seller : "samaoppai",
-        type : ['fantasy',`The Hobbit & The Lord Of The Rings`,"J. R. R. Tolkien","samaoppai"],
+        type : ['fantasy'],
     },
     { 
         id: 'product28',
@@ -587,7 +616,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Rowling J. K.",
         seller : "NEOSELLERS",
-        type : ['fantasy',`Harry Potter`, "Rowling J. K.","NEOSELLERS"],
+        type : ['fantasy'],
     },
     { 
         id: 'product29',
@@ -608,7 +637,7 @@ export const products = [
         tagline: 'Free Delivery',
         authour: "Lewis C. S.",
         seller : "BOOKSWAGONN",
-        type : ['fantasy',`The Chronicles of Narnia`,"Lewis C. S.", "BOOKSWAGONN"],
+        type : ['fantasy'],
     }
 ];
 
