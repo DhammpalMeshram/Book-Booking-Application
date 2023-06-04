@@ -36,19 +36,19 @@ const Home = ()=>{
     // },[])
 
     return (
-        <>
+        <div className='homeContainer'>
             <Navbar/>
             <div className="container">
                 <Banner /> 
                 <Filter/>
             </div>
-            <div id='movieContainer'>
+            <div id='allBooksContainer'>
                 {
                     products.map(item=><BookCard product={item} key={item.id} />)
                 }
 
             </div>
-        </>
+        </div>
     )
 }
 

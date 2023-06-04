@@ -83,7 +83,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             seller : "Amazing Buy",
             quantity: 1,
             description: "The classic bestseller behind this year's biggest movie, this film tie-in edition features the complete story of Bilbo Baggins' adventures in Middle-earth as shown in the film trilogy, with a striking cover image from Peter Jackson's film adaptation and drawings and maps by J.R.R. Tolkien. Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely travelling further than the pantry of his hobbit-hole in Bag End. But his contentment is disturbed when the wizard, Gandalf, and a company of thirteen dwarves arrive on his doorstep one day to whisk him away on an unexpected journey 'there and back again'. They have a plot to raid the treasure hoard of Smaug the Magnificent, a large and very dangerous dragon... The prelude to The Lord of the Rings, The Hobbit has sold many millions of copies since its publication in 1937, establishing itself as one of the most beloved and influential books of the twentieth century.",
-            discount: 'Extra 10% Off', 
+            discount: '10% Off', 
             tagline: 'Free Delivery',
             type : ['fiction',"The Hobbit","Riley Lucinda","Amazing Buy" ],
         },

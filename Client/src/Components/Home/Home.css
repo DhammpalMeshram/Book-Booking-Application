@@ -1,11 +1,18 @@
-.container {
-    padding: 10px;
-    background-color: #F2F2F2;
+.homeContainer {
+    background-color: #f2f2f2;
 }
 
-#movieContainer{
+.container {
+    padding: 10px;
+    background-color: white;
+}
+
+#allBooksContainer{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
 }

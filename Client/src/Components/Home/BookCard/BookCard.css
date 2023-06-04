@@ -1,13 +1,53 @@
-.movieCard{
+.bookCard{
     text-decoration: none;
     display: inline-flex;
-    margin: 5px;
-    border: 2px gray solid;
-    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* gap:10px; */
+    margin: 10px;
+    border: 1px gray solid;
+    padding: 10px 5px;
     border-radius: 5px;
+    width: 220px;
+    height: 400px;
+    box-shadow: 6px 5px 7px 1px rgb(169 123 123);
 }
 
-.movieCard img {
+.bookCard img {
     width: 200px;
     height: 300px;
+}
+
+.bookCard h3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 0px;
+} 
+
+.bookCard .offers {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    margin: 0px;
+}
+.bookCard .offers .discount{
+    font-weight: bold;
+    color: rgb(23, 202, 32);
+    font-style: italic;
+
+}
+
+
+.bookCard .offers .tagline{
+    font-weight: bold;
+    color: rgb(183, 187, 183);
+    font-style: italic;
+
 }

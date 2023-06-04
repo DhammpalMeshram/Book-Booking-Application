@@ -1,8 +1,12 @@
 .nav_bar {  /* main nav bar*/
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 55px 90px 0px 90px;
+    justify-content: center;
+    margin: 55px 0px 10px 0px;
+    gap:20px;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
 }
 
 .nav_item {  /* every individual item in navbar*/
