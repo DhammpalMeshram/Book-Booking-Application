@@ -8,11 +8,12 @@ import bodyParser from "body-parser";
 
 dotenv.config();
 const app = express();
-
+` `
 app.use(bodyParser.json({extended:true}));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(cors());
 app.use("", router);
+
 
 //function to connect database cloud
 const dataBaseConnect = async()=>{
@@ -27,6 +28,7 @@ const dataBaseConnect = async()=>{
 
 dataBaseConnect();
 
+// function to run a server
 app.listen(process.env.PORT, ()=>{
     console.log("server is running at port "+process.env.PORT);
 })
