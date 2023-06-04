@@ -1,4 +1,4 @@
-import * as actionTypes from "../constant/productConstants";
+import * as actionTypes from "../constants/productConstants";
 
 
 // reducer for state which store all data initially

@@ -9,31 +9,23 @@ import BookCard from '../BookCard/BookCard'
 
 
 //redux imports
-// import { getAllProducts } from '../../redux/actions/productActions';
-// import { useDispatch, useSelector } from 'react-redux';
+import { getAllProducts } from '../../Redux/actions/productActions';
+import { useDispatch, useSelector } from 'react-redux';
 
 //import of constant
-import { products } from '../../Constants/Data';
+// import { products } from '../../Constants/Data';
 
 
 const Home = ()=>{
-    // const dispatch = useDispatch();
-    // const {products} = useSelector(state=> state.getProducts);
+    const {products} = useSelector(state=> state.getProducts);
+    const dispatch = useDispatch();
     
-    // const sportsCollection = products.length>0? products.filter(item => item.type.includes('sports')):[];
-    
-    // const electonicsCollection = products.length>0? products.filter(item => item.type.includes('electronics')):[];
-    
-    // const homeCollection = products.length>0? products.filter(item => item.type.includes('home')):[];
-    
-    // const styleCollection = products.length>0? products.filter(item => item.type.includes('style')):[];
-
-    
-    // useEffect(()=>{
-    //     //getting initial data
-    //     dispatch(getAllProducts());
-    //     // eslint-disable-next-line
-    // },[])
+    //dispatch action at component mount for getting data from database
+    useEffect(()=>{
+        //getting initial data
+        dispatch(getAllProducts());
+        // eslint-disable-next-line
+    },[])
 
     return (
         <div className='homeContainer'>
