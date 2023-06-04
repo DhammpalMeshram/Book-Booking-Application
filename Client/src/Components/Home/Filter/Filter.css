@@ -1,16 +1,23 @@
 
 #filterContainer {
-    margin: 5px 0px;
-    padding: 0px 10px;
+    margin: 10px 0px;
+    padding: 5px 10px;
     display: flex;
     align-items: center;
     gap: 20px;
     font-size: 18px;
     font-weight: bold;
     color:#1645ed;
+    background-color: white;
     
 }
 #filterContainer select{
     padding: 5px;
     font-size: 16px;    
+}
+
+
+#clearFilter {
+    padding: 5px 10px;
+    font-size: 16px;
 }

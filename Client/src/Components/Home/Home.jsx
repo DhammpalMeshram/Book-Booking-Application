@@ -38,10 +38,8 @@ const Home = ()=>{
     return (
         <div className='homeContainer'>
             <Navbar/>
-            <div className="container">
-                <Banner /> 
-                <Filter/>
-            </div>
+            <Banner /> 
+            <Filter/>
             <div id='allBooksContainer'>
                 {
                     products.map(item=><BookCard product={item} key={item.id} />)

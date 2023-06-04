@@ -19,6 +19,7 @@ const Filter = ()=>{
                     sellerArray.map(item=><option  key={item} value={item}>{item}</option>)
                 }
             </select>
+            <button id="clearFilter">Clear All</button>
         </div>
 
     )

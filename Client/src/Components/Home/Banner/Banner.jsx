@@ -26,23 +26,25 @@ const responsive = {
 
 const Banner =()=>{
     return (
-        <Carousel 
-            responsive={responsive}
-            swipeable={false}
-            draggable={false}
-            showDots={false}
-            infinite={true}
-            autoPlay={true}
-            autoPlaySpeed={4000}
-            dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
-            containerClass="carousel-container"
-        >
-            { bannerData.map(data=>{
-                return (<img src={data.url} width={"400px"} alt="bannerImage" key="data.id"/>)
-              })
-            }
-        </Carousel> 
+      <div className="container">
+          <Carousel 
+              responsive={responsive}
+              swipeable={false}
+              draggable={false}
+              showDots={false}
+              infinite={true}
+              autoPlay={true}
+              autoPlaySpeed={4000}
+              dotListClass="custom-dot-list-style"
+              itemClass="carousel-item-padding-40-px"
+              containerClass="carousel-container"
+          >
+              { bannerData.map(data=>{
+                  return (<img src={data.url} width={"400px"} alt="bannerImage" key="data.id"/>)
+                })
+              }
+          </Carousel> 
+        </div>
     )
 }
 
