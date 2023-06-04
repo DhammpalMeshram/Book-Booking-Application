@@ -1,21 +1,21 @@
 import './LeftSide.css';
 // import React,{ useContext } from 'react';
 
-// import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router';
 // import { MyContext } from '../../../../context/DataProvider';
 
 //redux imports
-// import {useDispatch} from "react-redux";
-// import { addToCart } from '../../../../redux/actions/cartActions';
+import {useDispatch} from "react-redux";
+import { addToCart } from '../../../../Redux/actions/cartActions';
 
 //material ui imports
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import FlashOnIcon from '@mui/icons-material/FlashOn';
 
 const LeftSide =({product})=>{
-    // const dispatch = useDispatch();
+    const dispatch = useDispatch();
     // const { setCheckout,setBuyNow } = useContext(MyContext)
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const {id} = product;
 
@@ -23,7 +23,7 @@ const LeftSide =({product})=>{
     const addItemsToCart = ()=>{  
         //set the buyNow false globally
         // setBuyNow("");      
-        // dispatch(addToCart(id,1));
+        dispatch(addToCart(id,1));
     }
 
     //function to direct uset to payment page when buy now cicks

@@ -45,8 +45,7 @@ const CartItem =({cartProducts})=>{
         cartProducts.length>0?
         <div className='cart_left'>
             <div className='header1'>
-                <button autoFocus>Flipcart ({cartProducts.length})</button>
-                <button>Grocery</button>
+                <button autoFocus>WishBook ({cartProducts.length})</button>
             </div>
             <div className='header2'>
                 <p>From Saved Addresses</p>
