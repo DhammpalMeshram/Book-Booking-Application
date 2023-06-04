@@ -65,6 +65,15 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
     }
 
     */
+
+    export const paytm_img_url = "https://rukminim1.flixcart.com/www/96/96/promos/01/09/2020/a07396d4-0543-4b19-8406-b9fcbf5fd735.png?q=100"
+
+    export const upi_wallet = "https://static-assets-web.flixcart.com/fk-p-linchpin-web/batman-returns/logos/UPI.gif";
+
+    export const wallet_img_url = "https://static-assets-web.flixcart.com/fk-p-linchpin-web/batman-returns/logos/Wallets.gif";
+
+
+
     
 
     export const products = [

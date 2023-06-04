@@ -1,13 +1,10 @@
 import './Payment.css';
 import React, {useContext, useEffect, useState} from 'react';
 
-//router imports
 import {useNavigate} from "react-router-dom";
-
-//context Api imports
 import { MyContext } from '../../../Context/DataProvider';
 
-// componenets imports
+// componenets import s
 import LogInCheck from './LogInCheck/LogInCheck';
 import DeliveryAdd from './DeliveryAddress/DeliveryAdd';
 import PayOptions from './PayOptions/PayOptions';
@@ -33,10 +30,6 @@ const Payment  = ()=>{
     const [payment, setPayment] = useState(false);
     const [payParams, setPayParams] = useState(false);
     const [isBuyNow, setisBuyNow] = useState("");
-
-
-
-    const [universalState, setUniversalState] = useState("login");
     
 
     useEffect(()=>{
@@ -75,8 +68,8 @@ const Payment  = ()=>{
         setisBuyNow("empty");
     }
 
-    //  function to redirect user to the home page when he removes 
-    //  all items from cart
+    //function to redirect user to the home page when he removes all items
+    // from cart
     const onAddClick = ()=>{
         myContext.setCheckout(false);
         navigate("/");
@@ -84,7 +77,6 @@ const Payment  = ()=>{
 
     return (
         <div id="pay_container">
-            
             <LogInCheck setAdd = {setAdd}/>
             <DeliveryAdd setSummary = {setSummary} add={add} setAdd = {setAdd}/>
             
