@@ -7,7 +7,7 @@ export const navData = [
     { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS58uCOFmA5NZfFxTn-QcoCsf2o2yck2a8C1A&usqp=CAU', text: 'Biography', name:"Biography" },
     { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRejyaxO8plwCgtmlU4IPPnOSErHleoNK5WZw&usqp=CAU', text: 'Exam', name:"Exam" },
     { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSam4thQJIMAsXYfI2UwEnTCeNUUkRx9xd8Ng&usqp=CAU', text: 'Mistory' , name:"Mistory" },
-    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtqY16bfobbjivsZb2u6WEgzJ3C8PN0txWnA&usqp=CAU', text: 'Getting Rich', name:"Rich" },
+    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtqY16bfobbjivsZb2u6WEgzJ3C8PN0txWnA&usqp=CAU', text: 'Getting Rich', name:"Money" },
     { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPAKLxgjoF0NbytCaf4B5qhy9PcjgdcbT95w&usqp=CAU', text: 'Health', name:"Health" },
     { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDMTeWl95cjuHuvwVyivNsBKP9wRYJVp26Zg&usqp=CAU', text: 'success', name:"Success" },
     { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnbMZzwuIoeXHWr6GjVc0M8SuStwfaabE-TA&usqp=CAU', text: 'Romance', name:"Romance" },
