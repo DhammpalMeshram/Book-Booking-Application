@@ -6,14 +6,11 @@ import Navbar from './Navbar/Navber';
 import Banner from './Banner/Banner';
 import Filter from "./Filter/Filter"
 import BookCard from '../BookCard/BookCard'
-
+import Loading from '../Loading/Loading';
 
 //redux imports
 import { getAllProducts } from '../../Redux/actions/productActions';
 import { useDispatch, useSelector } from 'react-redux';
-
-//import of constant
-// import { products } from '../../Constants/Data';
 
 
 const Home = ()=>{
@@ -32,12 +29,17 @@ const Home = ()=>{
             <Navbar/>
             <Banner /> 
             <Filter/>
-            <div id='allBooksContainer'>
+            {
+                products?.length>0 ?
+                <div id='allBooksContainer'>
                 {
                     products.map(item=><BookCard product={item} key={item.id} />)
                 }
 
-            </div>
+                </div>
+                :<Loading/>
+            }
+            
         </div>
     )
 }
