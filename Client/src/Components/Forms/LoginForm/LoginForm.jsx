@@ -2,7 +2,7 @@
 import React,{useState, useContext} from 'react';
 
 import { MyContext } from '../../../Context/DataProvider';
-// import { authunticateSignIn } from '../../../service/api';
+import { authunticateSignIn } from '../../../service/api';
 import {TextField} from '@mui/material'
 
 const LoginForm = ({setUser,setOpen})=> {
@@ -24,7 +24,7 @@ const LoginForm = ({setUser,setOpen})=> {
        setUserData({...userData, [e.target.name]:inputValue}); 
     }
 
-    // function to validate user for sign in
+    // function to validate user for Log in
     const onLoginClick = async ()=>{
         setError({});
         if(userData.username ===''){
@@ -36,14 +36,14 @@ const LoginForm = ({setUser,setOpen})=> {
             return;
         }
         // send data to backend for validation
-        // const data  = await authunticateSignIn(userData);
+        const data  = await authunticateSignIn(userData);
 
-        // if(data.username){   
-        //     sessionStorage.setItem("flipcartUser",`${data.username}`);
+        if(data.username){   
+            sessionStorage.setItem("flipcartUser",`${data.username}`);
             mycontext.setLoggedIn(true);
-            // mycontext.setUserName(data.username)
+            mycontext.setUserName(data.username)
             setOpen(false);
-        // }
+        }
         return;
     }
 

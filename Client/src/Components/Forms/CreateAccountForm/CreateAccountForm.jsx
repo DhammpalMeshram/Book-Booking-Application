@@ -2,8 +2,8 @@ import './CreateAccountForm.css';
 import React,{useState} from 'react';
 
 import {TextField} from '@mui/material';
-// import { signUpFormValidation } from '../../../utils/validateSignIn';
-// import { authunticateSignUp } from '../../../service/api';
+import { signUpFormValidation } from '../../../utils/validateSignIn';
+import { authunticateSignUp } from '../../../service/api';
 
 const CreateAccountForm =({setUser})=>{
 
@@ -32,18 +32,18 @@ const CreateAccountForm =({setUser})=>{
         setErrors({...errors, firstName:'',lastName:'', email:'',mobileNumber:'', username:"",password:""})
     
         // frontend validation
-        // const validationResult = signUpFormValidation(newUser);
+        const validationResult = signUpFormValidation(newUser);
         // if no error is present
-        // if(validationResult != null){ setErrors(validationResult); }
+        if(validationResult != null){ setErrors(validationResult); }
     
-        // if(validationResult === null){
+        if(validationResult === null){
             //send data to backend for validation
-            // await authunticateSignUp(newUser);
+            await authunticateSignUp(newUser);
             
             setErrors({...errors,firstName:'',lastName:'', email:'',mobileNumber:'', username:"",password:""});
             setNewUser({...newUser,firstName:'',lastName:'', email:'',mobileNumber:'', username:"",password:""});
             setUser(true);  
-        // }
+        }
     }
     
     // function to toggle form 

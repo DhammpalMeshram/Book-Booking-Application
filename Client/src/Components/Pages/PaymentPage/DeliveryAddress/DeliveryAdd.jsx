@@ -46,28 +46,64 @@ const DeliveryAdd = ({setSummary, add, setAdd})=>{
                 <span className='num'>2</span>
                 <span className='title'>
                     DELIVERY ADDRESS
-                    {myContext.loggedin && !add && <DoneIcon style={{color: 'white'}}/>}
-                    </span>
+                    {   myContext.loggedin && !add && 
+                        <DoneIcon style={{color: 'white'}}/>    
+                    }   
+                </span>
             </div>
             {    add &&
                 <div id="add_form">
-                    <TextField  style={{marginBottom:'5px', width:'300px', marginLeft:'10px'}} variant='standard' label={"Enter Streat/Area"} name="area" onChange={onAddChanged}/>
-                    {addError.area? <p className='add_error'>{addError.area}</p>: null}
+                    <TextField  
+                        style={{marginBottom:'5px', width:'300px', marginLeft:'10px'}} 
+                        variant='standard' 
+                        label={"Enter Streat/Area"} 
+                        name="area" 
+                        onChange={onAddChanged}
+                    />
+                    {   addError.area? 
+                        <p className='add_error'>{addError.area}</p>
+                        : null
+                    }
                 
-
-                    <TextField  style={{marginBottom:'5px', width:'300px',marginLeft:'10px'}} variant='standard' label={"Enter City"} name="city" onChange={onAddChanged}/>
-                    {addError.city? <p className='add_error'>{addError.city}</p>: null}
+                    <TextField  
+                        style={{marginBottom:'5px', width:'300px',marginLeft:'10px'}} 
+                        variant='standard' 
+                        label={"Enter City"} 
+                        name="city" 
+                        onChange={onAddChanged}
+                    />
+                    {   addError.city? 
+                        <p className='add_error'>{addError.city}</p>
+                        : null
+                    }
                     
+                    <TextField  
+                        style={{marginBottom:'5px', width:'300px',marginLeft:'10px'}} 
+                        variant='standard' 
+                        label={"Enter State"}
+                        name="state" 
+                        onChange={onAddChanged}
+                    />
+                    {   addError.state? 
+                        <p className='add_error'>{addError.state}</p>
+                        : null
+                    }
 
-                    <TextField  style={{marginBottom:'5px', width:'300px',marginLeft:'10px'}} variant='standard' label={"Enter State"}
-                    name="state" onChange={onAddChanged}/>
-                    {addError.state? <p className='add_error'>{addError.state}</p>: null}
+                    <TextField  
+                        style={{marginBottom:'5px', width:'300px',marginLeft:'10px'}} 
+                        variant='standard' 
+                        label={"Enter Pincode"}
+                        name="pincode" 
+                        onChange={onAddChanged}
+                    />
+                    {   addError.pincode? 
+                        <p className='add_error'>{addError.pincode}</p>
+                        : null
+                    }
 
-                    <TextField  style={{marginBottom:'5px', width:'300px',marginLeft:'10px'}} variant='standard' label={"Enter Pincode"}
-                    name="pincode" onChange={onAddChanged}/>
-                    {addError.pincode? <p className='add_error'>{addError.pincode}</p>: null}
-
-                    <button className='add_btn' onClick={onAddClick}>Deliver Here</button>
+                    <button className='add_btn' onClick={onAddClick}>
+                        Deliver Here
+                    </button>
                 </div>
             }
         </div>

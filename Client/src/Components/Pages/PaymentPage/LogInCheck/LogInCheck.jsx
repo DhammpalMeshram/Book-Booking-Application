@@ -1,7 +1,7 @@
 import React, {useState, useContext,useEffect} from 'react';
 import './LogInCheck.css';
 
-// import { authunticateSignIn } from '../../../../service/api';
+import { authunticateSignIn } from '../../../../service/api';
 
 //context Api imports
 import { MyContext } from '../../../../Context/DataProvider';
@@ -46,13 +46,13 @@ const LogInCheck = ({setAdd, universalState})=>{
         }
 
         //sending data to backend for validation
-        // const data  = await authunticateSignIn(userData);
-        // if(data.username){   
-            // sessionStorage.setItem("flipcartUser",`${data.username}`);
-            // myContext.setLoggedIn(true);
-            // myContext.setUserName(data.username)
+        const data  = await authunticateSignIn(userData);
+        if(data.username){   
+            sessionStorage.setItem("flipcartUser",`${data.username}`);
+            myContext.setLoggedIn(true);
+            myContext.setUserName(data.username)
             setAdd("address");
-        // }
+        }
     }
 
 
