@@ -13,7 +13,7 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 
 
 //global state imports
-// import { useSelector} from 'react-redux';
+import { useSelector} from 'react-redux';
 // import { MyContext } from '../../context/DataProvider';
 
 //components imports
@@ -30,18 +30,16 @@ const StyledHeader = styled(AppBar)`
 `
 
 const Header =()=>{
-    // const {products} = useSelector(state=> state.getProducts);
-    // const {cartItems} = useSelector(state=> state.cart)
+    const {products} = useSelector(state=> state.getProducts);
+    const {cartItems} = useSelector(state=> state.cart)
     // const myContext = useContext(MyContext);
     const InputRef = useRef(null);
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const [text, setText] = useState('');
     const [productId, setProductId] = useState('');
     const [open, setOpen] = useState(false);
 
-    const logoUrl = "//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png";
-    const plusIconUrl ="//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png";
     
     useEffect(()=>{
         let isUserId = sessionStorage.getItem("flipcartUser");
@@ -88,16 +86,6 @@ const Header =()=>{
                     <MenuBookIcon onClick={clearInput}/>
                     WishBook.Com
                 </Link>
-            
-            {/* <div className='header_1'>
-                <Link to='/' style={{textDecoration:'none'}}>
-                    <img src ={logoUrl} alt={"filpcartLogo"} onClick={clearInput}/>
-                </Link>
-                <p>Expore
-                    <span>Plus</span>
-                    <img width={'12px'} src={plusIconUrl} alt="icon"/>
-                </p>
-            </div> */}
            
             {   
             // !myContext.checkout && 
@@ -140,13 +128,11 @@ const Header =()=>{
                 </div>
             }
             {/* {   !myContext.checkout && */
-                // <div className='header_6' onClick={()=>navigate('/cart')}>
-                <div className='header_6'>
-
+                <div className='header_6' onClick={()=>navigate('/cart')}>
                     <ShoppingCartIcon/>
-                    {/* <Badge badgeContent={cartItems.length} color='secondary'> */}
+                    <Badge badgeContent={cartItems.length} color='secondary'>
                         <span>Cart</span>
-                    {/* </Badge> */}
+                    </Badge>
                 </div>
             }
 
