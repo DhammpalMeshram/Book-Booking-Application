@@ -26,7 +26,7 @@ const CategoryPage = ()=>{
         let searchTerm = params.serchname;
         let productfound = [];
         
-        products.forEach(item=>{
+        products?.forEach(item=>{
                 if(item.type.includes(searchTerm)){
                     productfound.push(item);
                 }     

@@ -5,8 +5,8 @@ import { getAllProducts, getProductById } from "../controllers/productController
 
 const router = express.Router();
 
-// router.post("/signin", signInController);
-// router.post("/signup", signUpController);
+router.post("/signin", signInController);
+router.post("/signup", signUpController);
 router.get("/product", getAllProducts);
 router.get('/product/:id', getProductById)
 // router.post("/cartadd", storeToCartController);
