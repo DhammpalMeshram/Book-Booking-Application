@@ -1,8 +1,7 @@
 import axois from "axios";
-import * as actionTypes from "../constants/productConstants";
+import * as actionTypes from "../constant/productConstants";
 
-// const url = "http://localhost:8000";
-const url = "https://flipcartbackend-o3a5.onrender.com";
+const url = "http://localhost:8000";
 
 
 // middleware to get all product initially
