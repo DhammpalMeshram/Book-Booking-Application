@@ -21,13 +21,13 @@
     border-radius: 2px;
     text-align: center;
 }
+
 .head > .title {
     color: #fff;
     font-weight: 600;
     font-size: 16px;
     padding: 0px;
     margin: 0px;
-
 }
 
 #order_sum{

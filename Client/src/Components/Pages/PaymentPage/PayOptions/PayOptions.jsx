@@ -116,7 +116,7 @@ const PayOptions = ({setPayment, payParams ,setPayParams, summary, payment})=> {
             <img src={paytm_img_url} alt="paytm" width={'24px'} height={"24px"}/>
             <p>Paytm Wallet</p>
             {payParams &&
-                <button className="btn" onClick={onPaymetBtnClick}>CONTINUE</button>
+                <button className="btn btnClass" onClick={onPaymetBtnClick}>CONTINUE</button>
             }
         </div>
 
@@ -135,7 +135,7 @@ const PayOptions = ({setPayment, payParams ,setPayParams, summary, payment})=> {
                 {
                     upiParams && sec.btn1 && 
 
-                <button className="btn" onClick={onPaymetBtnClick}>CONTINUE</button>
+                <button className="btn btnClass" onClick={onPaymetBtnClick}>CONTINUE</button>
                 }
                 </div>
                 <div className='sec'>
@@ -150,7 +150,7 @@ const PayOptions = ({setPayment, payParams ,setPayParams, summary, payment})=> {
                 }
                 {
                 upiParams && sec.btn2 &&
-                <button className="btn" onClick={onPaymetBtnClick}>CONTINUE</button>
+                <button className="btn btnClass" onClick={onPaymetBtnClick}>CONTINUE</button>
                 }
                 </div>
             </div>  
@@ -225,7 +225,7 @@ const PayOptions = ({setPayment, payParams ,setPayParams, summary, payment})=> {
                         <TextField  style={{marginBottom:'5px', width:'100px', marginLeft:'10px'}} variant='standard' label={"CVV"} />
                     </div>
                     <p></p>
-                    <button onClick={onPaymetBtnClick}>PAY</button>
+                    <button onClick={onPaymetBtnClick} className='btnClass'>PAY</button>
                 </div>
             }
         </div>
@@ -283,7 +283,7 @@ const PayOptions = ({setPayment, payParams ,setPayParams, summary, payment})=> {
                         <option>City Union Bank</option>
                         <option>Canara Bank</option>
                     </select>
-                    <button onClick={onPaymetBtnClick}>PAY</button>
+                    <button onClick={onPaymetBtnClick} className='btnClass'>PAY</button>
                 </div>
             }
         </div>

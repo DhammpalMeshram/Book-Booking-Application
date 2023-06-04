@@ -1,5 +1,5 @@
-import React from 'react';
 import './RightSide.css';
+import React from 'react';
 
 //material ui imports
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';

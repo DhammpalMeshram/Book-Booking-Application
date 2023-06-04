@@ -2,7 +2,6 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
-
 }
 
 /*<-----Empty Page --->*/
@@ -29,8 +28,6 @@
     padding: 0px;
     text-decoration: none;
 }
-
-
 
 #emptyPage img {
     position:absolute;

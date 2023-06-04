@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 //component import
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
-// import DataProvider from './context/DataProvider';
+import DataProvider from './Context/DataProvider';
 import DetailsPage from './Components/Pages/DetailsPage/DetailsPage';
 import Cart from './Components/Cart/Cart';
 import EmptyCart from './Components/Cart/EmptyCart/EmptyCart';
@@ -18,7 +18,7 @@ import Footer from "./Components/Footer/Footer";
 function App() {
 
   return (
-      // <DataProvider className = "App">
+      <DataProvider className = "App">
         <BrowserRouter>
           <Header/>
           <main style={{marginTop:55}}>
@@ -34,7 +34,7 @@ function App() {
           </main>
           <Footer/>
         </BrowserRouter>
-      // </DataProvider>
+      </DataProvider>
   );
 }
 

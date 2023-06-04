@@ -15,6 +15,7 @@
     cursor: pointer;
     z-index: 200;
 }
+
 .nav_item:hover{
     color:#2874f0;
 }

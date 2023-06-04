@@ -2,7 +2,10 @@ import React, {useState, useContext,useEffect} from 'react';
 import './LogInCheck.css';
 
 // import { authunticateSignIn } from '../../../../service/api';
-// import { MyContext } from '../../../../context/DataProvider';
+
+//context Api imports
+import { MyContext } from '../../../../Context/DataProvider';
+
 
 //matrial ui imports
 import { TextField } from '@mui/material';
@@ -12,15 +15,15 @@ import StarIcon from '@mui/icons-material/Star';
 import DoneIcon from '@mui/icons-material/Done';
 
 
-const LogInCheck = ({setAdd})=>{
-    // const myContext = useContext(MyContext);
+const LogInCheck = ({setAdd, universalState})=>{
+    const myContext = useContext(MyContext);
     const [error,setError] = useState({username:'', password:''});
     const [userData,setUserData] = useState({username:'', password:''});
 
     // if user is already log in then open address terminal
     useEffect(()=>{
-        // if(myContext.loggedin)
-            // setAdd(true);
+        if(myContext.loggedin)
+            setAdd(true);
           // eslint-disable-next-line  
     },[])
 
@@ -48,7 +51,7 @@ const LogInCheck = ({setAdd})=>{
             // sessionStorage.setItem("flipcartUser",`${data.username}`);
             // myContext.setLoggedIn(true);
             // myContext.setUserName(data.username)
-            // setAdd(true);
+            setAdd("address");
         // }
     }
 
@@ -59,11 +62,12 @@ const LogInCheck = ({setAdd})=>{
                 <span className='num'>1</span>
                 <span className='title'>
                     LOGIN
-                    {/* {myContext.loggedin && <DoneIcon style={{color: 'white'}}/>} */}
+                    {myContext.loggedin && <DoneIcon style={{color: 'white'}}/>}
                         
                 </span>
             </div>
-            {/* {   !myContext.loggedin &&  */}
+            {   
+            !myContext.loggedin &&  
                 <div id="log">
                     <div id="log_form">
                         <TextField  style={{marginBottom:'5px', width:'300px'}} variant='standard' label={"Enter Email/Mobile number"} name="username" onChange={onInputChange}/><br></br>
@@ -92,7 +96,7 @@ const LogInCheck = ({setAdd})=>{
                         </p>
                     </div>
                 </div>
-            {/* }          */}
+            }
         </div>
     )
 }

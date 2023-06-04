@@ -9,16 +9,12 @@ const EmptyCart =()=>{
     return (
         <div className='empty'>
             <div id="e_container">
-            <div className='e_header1'>
-                <button autoFocus>Flipcart</button>
-                <button>Grocery</button>
-            </div>
-            <div className='e_header2'>
-                <img src = {emptyImage} alt='empty' width={250} />
-                <p id="mis">Missing Cart Items</p>
-                <p id="direction">Login to see the items you added previously</p>
-                <button onClick={()=>navigate("/")}>ADD BOOKS</button>
-            </div>
+                <div className='e_header2'>
+                    <img src = {emptyImage} alt='empty' width={250} />
+                    <p id="mis">Missing Cart Items</p>
+                    <p id="direction">Login to see the items you added previously</p>
+                    <button onClick={()=>navigate("/")}>ADD BOOKS</button>
+                </div>
             </div>
         </div>
     )

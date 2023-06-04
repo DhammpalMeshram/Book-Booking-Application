@@ -1,14 +1,16 @@
-import React, {useState, useContext} from 'react';
 import './DeliveryAdd.css';
+import React, {useState, useContext} from 'react';
 
 // material ui imports
 import { TextField } from '@mui/material';
-// import { MyContext } from '../../../../context/DataProvider';
 import DoneIcon from '@mui/icons-material/Done';
+
+//context Api imports
+import { MyContext } from '../../../../Context/DataProvider';
 
 
 const DeliveryAdd = ({setSummary, add, setAdd})=>{
-    // const myContext = useContext(MyContext);
+    const myContext = useContext(MyContext);
     const [address, setAddress] = useState({area:"", city:"",state:"", pincode:""});
     const [addError,setAddError] = useState({});
 
@@ -37,7 +39,7 @@ const DeliveryAdd = ({setSummary, add, setAdd})=>{
             return;
         }
         setAdd(false);
-        setSummary(true);
+        setSummary("summary");
     }
 
     return (
@@ -46,10 +48,11 @@ const DeliveryAdd = ({setSummary, add, setAdd})=>{
                 <span className='num'>2</span>
                 <span className='title'>
                     DELIVERY ADDRESS
-                    {/* {myContext.loggedin && !add && <DoneIcon style={{color: 'white'}}/>} */}
+                    {myContext.loggedin && !add && <DoneIcon style={{color: 'white'}}/>}
                     </span>
             </div>
-            {    add &&
+            {    
+            add &&
                 <div id="add_form">
                     <TextField  style={{marginBottom:'5px', width:'300px', marginLeft:'10px'}} variant='standard' label={"Enter Streat/Area"} name="area" onChange={onAddChanged}/>
                     {addError.area? <p className='add_error'>{addError.area}</p>: null}

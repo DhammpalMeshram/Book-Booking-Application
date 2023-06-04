@@ -1,7 +1,7 @@
-// import React, { useContext } from 'react';
 import './CartItem.css';
+import React, { useContext } from 'react';
 
-// import { MyContext } from '../../../context/DataProvider';
+import { MyContext } from '../../../Context/DataProvider';
 import {useNavigate} from 'react-router-dom';
 
 //component imports
@@ -9,10 +9,10 @@ import ButtonsGroup from '../ButtonGroup/ButtonGroup';
 
 // redux imports 
 import { useDispatch } from 'react-redux';
-import { removeFromCart, removeAllFromCart } from '../../../Redux/actions/cartActions';
+import { removeFromCart } from '../../../Redux/actions/cartActions';
 
 const CartItem =({cartProducts})=>{
-    // const {setCheckout} = useContext(MyContext);
+    const {setCheckout} = useContext(MyContext);
     const navigate = useNavigate();
     const dispatch = useDispatch();
     
@@ -30,11 +30,11 @@ const CartItem =({cartProducts})=>{
 
     // function to navigate to payment
     const onOrderPlaced = ()=>{
-        // setCheckout(true);
-        // navigate("/payment");
+        setCheckout(true);
+        navigate("/payment");
     }
 
-
+    // function to cleat Cart
     const clearAllCart = ()=>{
         dispatch(removeFromCart("all"));
         navigate("/emptyCart");
@@ -62,9 +62,7 @@ const CartItem =({cartProducts})=>{
                             </div>
                             <div className='p_details'>
                                 <p className="title">{addElipsis(item.title.longTitle)}</p>
-                                <p className='seller'>Seller : {item.seller} 
-                                    
-                                </p>
+                                <p className='seller'>Seller : {item.seller}</p>
                                 <span className='mpr'>₹{item.price.mrp}</span>
                                 <span className='cost'>₹{item.price.cost}</span>
                                 <span className='off'>{item.price.discount} off</span>

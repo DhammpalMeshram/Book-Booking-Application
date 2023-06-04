@@ -29,11 +29,7 @@
     background-color: #fff;
     border-bottom: 3px solid #fff;
     cursor: pointer;
-}
-
-.cart_left >.header1 > button:focus {
     color:#2874f0;
-    border-bottom: 3px solid #2874f0;
 }
 
 .cart_left >.header2 {
@@ -160,7 +156,7 @@
 }
 
 .cart_left> .place_container> button {
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fb641b;

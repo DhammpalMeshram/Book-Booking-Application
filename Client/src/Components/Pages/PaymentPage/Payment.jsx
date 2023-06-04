@@ -1,10 +1,13 @@
-import React, {useContext, useEffect, useState} from 'react';
 import './Payment.css';
+import React, {useContext, useEffect, useState} from 'react';
 
+//router imports
 import {useNavigate} from "react-router-dom";
-// import { MyContext } from '../../../context/DataProvider';
 
-// componenets import s
+//context Api imports
+import { MyContext } from '../../../Context/DataProvider';
+
+// componenets imports
 import LogInCheck from './LogInCheck/LogInCheck';
 import DeliveryAdd from './DeliveryAddress/DeliveryAdd';
 import PayOptions from './PayOptions/PayOptions';
@@ -21,7 +24,7 @@ const Payment  = ()=>{
     const {product} = useSelector(state=> state.getProductDetail);
     const {cartItems} = useSelector(state=> state.cart);
     const dispatch= useDispatch();
-    // const myContext = useContext(MyContext);
+    const myContext = useContext(MyContext);
     const navigate = useNavigate();
  
     const [add, setAdd] = useState(false);
@@ -30,12 +33,16 @@ const Payment  = ()=>{
     const [payment, setPayment] = useState(false);
     const [payParams, setPayParams] = useState(false);
     const [isBuyNow, setisBuyNow] = useState("");
+
+
+
+    const [universalState, setUniversalState] = useState("login");
     
 
-    // useEffect(()=>{
+    useEffect(()=>{
         // if user has entered trough buy now
-        // if(myContext.buyNow)  setisBuyNow("true");       
-    // },[myContext.buyNow])
+        if(myContext.buyNow)  setisBuyNow("true");       
+    },[myContext.buyNow])
     
     // fucntion to show payment when summary confirmed;
     const onSummaryConfirmed = ()=>{
@@ -68,15 +75,16 @@ const Payment  = ()=>{
         setisBuyNow("empty");
     }
 
-    //function to redirect user to the home page when he removes all items
-    // from cart
+    //  function to redirect user to the home page when he removes 
+    //  all items from cart
     const onAddClick = ()=>{
-        // myContext.setCheckout(false);
+        myContext.setCheckout(false);
         navigate("/");
     }
 
     return (
         <div id="pay_container">
+            
             <LogInCheck setAdd = {setAdd}/>
             <DeliveryAdd setSummary = {setSummary} add={add} setAdd = {setAdd}/>
             

@@ -1,8 +1,11 @@
 import './LeftSide.css';
-// import React,{ useContext } from 'react';
+import React,{ useContext } from 'react';
 
+//router imports
 import { useNavigate } from 'react-router';
-// import { MyContext } from '../../../../context/DataProvider';
+
+//context APi imports
+import { MyContext } from '../../../../Context/DataProvider';
 
 //redux imports
 import {useDispatch} from "react-redux";
@@ -14,7 +17,7 @@ import FlashOnIcon from '@mui/icons-material/FlashOn';
 
 const LeftSide =({product})=>{
     const dispatch = useDispatch();
-    // const { setCheckout,setBuyNow } = useContext(MyContext)
+    const { setCheckout,setBuyNow } = useContext(MyContext)
     const navigate = useNavigate();
 
     const {id} = product;
@@ -22,15 +25,15 @@ const LeftSide =({product})=>{
     //function to add items to cart
     const addItemsToCart = ()=>{  
         //set the buyNow false globally
-        // setBuyNow("");      
+        setBuyNow(false);      
         dispatch(addToCart(id,1));
     }
 
     //function to direct uset to payment page when buy now cicks
     const onByNowClick = ()=>{
-        // setBuyNow(true);  //this is manadotory to open payment from cart
-        // setCheckout(true);
-        // navigate("/payment");
+        setBuyNow(true);  //this is manadotory to open payment from cart
+        setCheckout(true);
+        navigate("/payment");
     }
 
     return (

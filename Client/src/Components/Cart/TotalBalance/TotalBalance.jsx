@@ -11,6 +11,7 @@ const TotalBalance = ({cartProducts})=>{
         totalMrp += Number(item.price.mrp);
         totalCost += Number(item.price.cost);
     })
+    
     let dis = totalMrp-totalCost;
  
     return (

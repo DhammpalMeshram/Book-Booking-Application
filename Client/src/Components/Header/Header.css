@@ -30,16 +30,14 @@
 .header_2 > input { /* serch bar*/
     width: 90%;
     padding: 3px;
-    font-size: unset;  /* sol that it will take font style of parent*/
-    border :0;  /* to hide border*/
-    outline: 0px;  /* to hide border when it is in focus*/
+    border :none;        
+    outline: none;     
     font-size: 13px;
 
 }
 .header_2 > svg {  /* serch icon*/
     color : #2874f0;
     cursor: pointer;
-    
 }
 
 .header_3{  /*log in button container*/
@@ -57,7 +55,6 @@
     font-weight: 700;
     font-size: 15px;
     cursor: pointer;
-
 }
 
 .header_4{   /* become a seller container*/

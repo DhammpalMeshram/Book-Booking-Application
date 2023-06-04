@@ -35,13 +35,12 @@
     padding: 5px 12px;
     margin: 0px;
 }
+
 .bookCard .offers .discount{
     font-weight: bold;
     color: rgb(23, 202, 32);
     font-style: italic;
-
 }
-
 
 .bookCard .offers .tagline{
     font-weight: bold;

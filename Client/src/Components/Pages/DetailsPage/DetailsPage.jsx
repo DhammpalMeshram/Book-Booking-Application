@@ -1,10 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import {useParams} from 'react-router-dom'
 
 // redux imports
 import { useSelector, useDispatch } from 'react-redux';
 import { getProductDetails } from '../../../Redux/actions/productActions';
-
 
 //component imports
 import LeftSide from './LeftSide/LeftSide';

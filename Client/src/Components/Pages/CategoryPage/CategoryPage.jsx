@@ -1,12 +1,17 @@
-import React,{useState, useEffect} from 'react';
 import './CategoryPage.css';
+import React,{useState, useEffect} from 'react';
+
+//router imports
 import { useParams} from 'react-router';
 import { Link } from 'react-router-dom';
 
-// import { products } from '../../../Constants/Data';
+//component imports
 import BookCard from '../../BookCard/BookCard';
+
+// redux imports
 import { useSelector } from 'react-redux';
 
+// Material UI imports
 import HomeIcon from '@mui/icons-material/Home';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
