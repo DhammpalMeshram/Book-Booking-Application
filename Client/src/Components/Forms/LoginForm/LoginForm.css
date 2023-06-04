@@ -1,0 +1,97 @@
+.login_container {  /* main container*/
+    display: flex; 
+    height: 85vh;
+    width: 90vh;
+    /* background:url("https://media.istockphoto.com/id/516137066/photo/magic-book-with-shining-lights.jpg?s=612x612&w=0&k=20&c=wmRWM6MWdGn_6cmPxDfMXtWM-xZTB6fb-o6foGEQzbw=");
+    background-size: 79% 100%; */
+}
+
+.login_left{  /* left section*/
+    /* background-color: #2874f0; */
+    padding: 30px;
+    width:40%;
+    height: 100%;
+    /* box-sizing: border-box; */
+    color: white;
+    background:url("https://media.istockphoto.com/id/516137066/photo/magic-book-with-shining-lights.jpg?s=612x612&w=0&k=20&c=wmRWM6MWdGn_6cmPxDfMXtWM-xZTB6fb-o6foGEQzbw=");
+    background-size: 100% 100%;
+}
+
+.login_left > h1 {
+    font-weight: 600;
+}
+
+.login_left > p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #DBDBDB;
+}
+
+.login_right{ /* right section*/
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    flex: 1;
+    width: 60%;
+    height: 90%;
+
+}
+
+.login_right > .text {  /* text in p tag*/
+    font-size: 12px;
+    color: #878787;
+}
+
+.login_right > .text > span {
+    color: #2874f0;
+    cursor: pointer;
+}
+
+.login_right > .btn {  /* both button common styles*/
+    height: 48px;
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login_right > .login_btn { /* log in button*/
+    background-color: #fb641b;
+    color: #fff;
+}
+
+.login_right > .request_btn {   /* request otp button*/
+    background-color: #fff;
+    color: #2874f0;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 /20%); /*to give shadow*/
+    margin-top: 10px; 
+}
+
+.login_right > .create_ac {  /* text at bottom*/
+    font-size: 14px;
+    font-weight: 600;
+    color: #2874f0;
+    cursor: pointer;
+}
+
+.login_right> .or {
+    margin: 10px 0px 0px 0px;
+    padding: 0px;   
+}
+
+.login_right> .username_error{
+    color:red;
+    align-self: left;
+    text-align: left;
+    padding: 0px 0px 3px 0px;
+    margin: 0;
+    width: 100%;
+    font-size: 4px;
+}
+
+

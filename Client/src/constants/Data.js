@@ -1,7 +1,7 @@
 
 // data for navgation bar
 export const navData = [
-    { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT0arnFsxWrxtVkGXrvzNBS6KAIF5LLyX4-A&usqp=CAU', text: 'Fiction', name:"Fiction" },
+    { url: 'https://media.istockphoto.com/id/516137066/photo/magic-book-with-shining-lights.jpg?s=612x612&w=0&k=20&c=wmRWM6MWdGn_6cmPxDfMXtWM-xZTB6fb-o6foGEQzbw=', text: 'Fiction', name:"Fiction" },
     { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyDH2xH6TgG1gUNNW08vEJdIJBFjuUwm0ICA&usqp=CAU', text: 'Fantasy', name:"Fantasy" },
     { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4agaN9f5NW1nVQgafGUC8oPieU4h8_vc4Zw&usqp=CAU', text: 'History' ,name:"History" },
     { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS58uCOFmA5NZfFxTn-QcoCsf2o2yck2a8C1A&usqp=CAU', text: 'Biography', name:"Biography" },

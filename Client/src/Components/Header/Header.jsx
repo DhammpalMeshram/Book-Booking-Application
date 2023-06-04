@@ -19,8 +19,8 @@ import { MyContext } from '../../Context/DataProvider';
 import { useSelector} from 'react-redux';
 
 //components imports
-// import Login from '../Login/Login';
-// import Profile from '../Profile/Profile';
+import Login from '../Login/Login';
+import Profile from '../Profile/Profile';
 
 //roting imports 
 import {Link, useNavigate} from 'react-router-dom';
@@ -87,10 +87,15 @@ const Header =()=>{
 
     
     return (
-        <StyledHeader style={{boxShadow: 'none'}}>
-        <Toolbar  style={{minHeight:55,}}>
-                <Link to='/' className='header_1' style={{textDecoration:'none'}} >
-                    <MenuBookIcon onClick={clearInput}/>
+       <StyledHeader style={{boxShadow: 'none'}}>
+        <Toolbar style={{minHeight:55,}}>
+                <Link 
+                    to='/' 
+                    className='header_1' 
+                    style={{textDecoration:'none'}}
+                    onClick={clearInput} 
+                >
+                    <MenuBookIcon/>
                     WishBook.Com
                 </Link>
            
@@ -117,9 +122,7 @@ const Header =()=>{
             } 
             {   !myContext.checkout && 
                 <div className={'header_3'}>
-                    {/* { myContext.loggedin ? <Profile/>:<button onClick={onLoginCLick}>Login</button> } */}
-                    { <button onClick={onLoginCLick}>Login</button> }
-
+                    { myContext.loggedin ? <Profile/>:<button onClick={onLoginCLick}>Login</button> }
                 </div>
             }
             {   !myContext.checkout && 
@@ -145,7 +148,7 @@ const Header =()=>{
 
         </Toolbar>
 
-        {/* {<Login open={open} setOpen={setOpen}/>} */}
+        {<Login open={open} setOpen={setOpen}/>}
       </StyledHeader>
     )
 }

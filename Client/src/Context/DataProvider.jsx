@@ -10,7 +10,7 @@ const DataProvider =(props)=>{
     // constatnt to check weather user is comming fro buy now button.
     const [buyNow, setBuyNow] = useState(false);
     // constant to maintain username 
-    const [userName, setUserName] = useState("");
+    const [userName, setUserName] = useState("Dhammpal123");
 
     
     return (
