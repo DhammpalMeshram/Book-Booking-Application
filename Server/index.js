@@ -1,8 +1,8 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-import {defaultData} from "./defaultData.js";
-import router from "./routes/routes.js";
+// import {defaultData} from "./defaultData.js";
+// import router from "./routes/routes.js";
 import cors from "cors";
 import bodyParser from "body-parser";
 
