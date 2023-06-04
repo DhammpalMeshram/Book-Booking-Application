@@ -1,0 +1,296 @@
+
+#pay_option {
+    background: #fff;
+}
+
+#pay_option > .pay {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;
+    z-index: 2;
+}
+
+#pay_option > .pay > input {
+    width: 18px;
+    height: 18px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#pay_option > .pay > img {
+    width: 24px;
+    height:24px;
+    margin-right: 20px;
+}
+#pay_option > .pay > p{
+    display: block;
+    width: 90%;
+}
+ 
+#pay_option > .pay > .btn{
+    display: block;
+    margin-left: 85px;
+    padding: 15px 35px;
+    color: #fff;
+    background-color: #fb641b;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#upi_container {
+    padding: 0px 0px 10px 80px;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+#upi_container > p {
+    display: inline-block;
+    width: 90%;
+}
+#upi_container > .sec {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#upi_container > .sec > input {
+    width: 18px;
+    height: 18px;
+    border: 3px gray solid;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+#upi_container > .sec > label {
+    display: block;
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+#upi_container > .sec > button {
+    display: block;
+    margin: 20px 0px 20px 45px;
+    padding: 15px 35px;
+    color: #fff;
+    background-color: #fb641b;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#wallet_container {
+    padding: 0px 0px 10px 80px;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+#wallet_container > p {
+    display: inline-block;
+    width: 90%;
+}
+
+#wallet_container > .sec {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#wallet_container > .sec > input {
+    width: 18px;
+    height: 18px;
+    border: 3px gray solid;
+    margin-right: 20px;
+}
+
+#wallet_container > .sec > label {
+    display: block;
+    width: 80%;
+}
+
+#wallet_container > .sec > button {
+    display: block;
+    margin: 20px 0px 20px 45px;
+    padding: 15px 35px;
+    color: #fff;
+    background-color: #fb641b;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#wallet_container > .sec > p {
+    color : gray;
+    padding-left: 40px;
+    margin: 0px;
+}
+
+#card_container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px 20px;
+}
+
+#card_container > div {
+    border: 2px solid #ece0e0;
+    padding: 3px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+#card_container> #select_div {
+    display: flex;
+    align-items: center; 
+}
+
+#card_container> #select_div > span {
+    font-size: 16px;
+    padding: 10px;
+    color:#c7baba;
+}
+
+#card_container> #select_div > select {
+    width: 50px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+
+#card_container> p {
+    width: 10%;
+}
+
+#card_container> button {
+    display: block;
+    margin: 20px 0px 0px 20px;
+    padding: 15px 35px;
+    color: #fff;
+    background-color: #fb641b;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 150px;
+}
+
+#netBanking {
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+}
+
+#netBanking > p {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+}
+
+#netBanking > #bank_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#netBanking > #bank_container > p {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+
+#netBanking > #bank_container > p> span> input {
+    width: 18px;
+    height: 18px;
+    margin: 0px 15px 20px 0px;
+}
+
+#netBanking > #bank_container > p> span> img {
+    height: 20px;
+    width: 20px;
+    margin: 0px 0px 20px 10px;
+}
+
+#netBanking > #bank_container > p> span> label{
+    margin: 0px 100px 20px 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#netBanking > select {
+    width: 500px;
+    height: 30px;
+    font-size: 18px;
+    margin: 0px 0px 20px 0px;
+}
+
+#netBanking > button {
+    display: block;
+    margin: 0px 0px 15px 0px;
+    padding: 15px 35px;
+    color: #fff;
+    background-color: #fb641b;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 150px;
+}
+
+#cash > button {
+    display: block;
+    margin: 0px 0px 15px 45px;
+    padding: 15px 35px;
+    color: #fff;
+    background-color: #fb641b;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 150px;
+}
+    
+#emi {
+    position: relative;
+}
+
+#emi> span {
+    color: #878787;
+    font-size: 16px;
+    font-weight: 600;
+    float: right;
+    position: absolute;
+    top: auto;
+    right: 30px;
+    padding-right: 10px;
+}
+
+#emi > span > svg {
+    font-size: 20px;
+    color: #878787;
+    margin: 10px;
+}
+
+
+

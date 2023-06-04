@@ -1,0 +1,51 @@
+#pay_container{  /* common to all*/
+    padding: 20px 200px;
+    background-color: #f2f2f2;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    background-color: #2874f0;
+    padding: 15px 25px;
+    border-radius: 2px;    
+}
+
+.head > .num {
+    font-size: 14px;
+    padding: 1px 6px 2px 6px;
+    background-color: #fff;
+    color:#2874f0;
+    margin-right: 20px;
+    font-weight: 500;
+    border-radius: 2px;
+    text-align: center;
+}
+.head > .title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#order_sum{
+    margin-bottom: 10px;
+}
+
+#order_sum > button {
+    display: block;
+    background-color: #fb641b;
+    color: #fff;
+    height: 48px;
+    width: 300px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 50px;
+}
+
