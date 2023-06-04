@@ -2,13 +2,13 @@ import {createStore, combineReducers, applyMiddleware} from "redux";
 import {composeWithDevTools} from "redux-devtools-extension";
 import thunk from "redux-thunk";
 import { getAllProductsReducer, getProductDetailReducer} from "./reducers/productReducer";
-// import {cartReducer} from "./reducers/cartReducer";
+import {cartReducer} from "./reducers/cartReducer";
 
 // combining all reducers
 const reducer = combineReducers({
     getProducts : getAllProductsReducer,
     getProductDetail : getProductDetailReducer,
-    // cart : cartReducer
+    cart : cartReducer
 })
 
 //attaching the middelware
