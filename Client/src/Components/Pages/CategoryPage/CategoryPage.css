@@ -1,0 +1,30 @@
+#categoryPage {
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+
+/*<-----Empty Page --->*/
+
+#emptyPage{
+    padding: 20px;
+    background-color: white;
+}
+
+#emptyPage > button {
+    margin-left: 20px;
+    width: 200px;
+    background-color:coral;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin-bottom: 65vh;
+}
+
+#emptyPage > button > a {
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}

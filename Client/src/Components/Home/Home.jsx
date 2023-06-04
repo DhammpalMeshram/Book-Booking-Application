@@ -5,7 +5,7 @@ import React, {useEffect} from 'react';
 import Navbar from './Navbar/Navber';
 import Banner from './Banner/Banner';
 import Filter from "./Filter/Filter"
-import BookCard from './BookCard/BookCard'
+import BookCard from '../BookCard/BookCard'
 
 
 //redux imports

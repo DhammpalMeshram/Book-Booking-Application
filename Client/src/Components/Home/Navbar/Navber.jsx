@@ -11,13 +11,13 @@ const Navbar = ()=>{
     
     // function to naviagate user to category page;
     const onCategoryClick = (e)=>{
-        // e.stopPropagation();
-        // let serchname = '';
-        // //to redirect user from if he cliks on div or image
-        // if(e.target.name){ serchname = e.target.name; }
-        // // redirect user if he click on the text
-        // if(e.target.id){ serchname = e.target.id; }
-        // navigate(`/${serchname}`);
+        e.stopPropagation();
+        let serchname = '';
+        //to redirect user from if he cliks on div or image
+        if(e.target.name){ serchname = e.target.name; }
+        // redirect user if he click on the text
+        if(e.target.id){ serchname = e.target.id; }
+        navigate(`/${serchname}`);
     }
 
     return (      

@@ -8,7 +8,7 @@ const BookCard = ({product})=>{
         <Link
             className="bookCard"
             key={product.id} 
-            to={`product/${product.id}`} 
+            to={`/product/${product.id}`} 
             style={{textDecoration:'none'}}
         >
             <img src={product.url} alt={'productImage'} />

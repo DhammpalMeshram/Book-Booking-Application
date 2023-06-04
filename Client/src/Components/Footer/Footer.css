@@ -4,9 +4,7 @@
     padding: 20px 0px;
     justify-content: space-evenly;
     background-color: white;
-    border-top: 2px rgb(236, 236, 236) solid;
-    /* position: absolute;
-    bottom: 0; */
+    border-top: 10px rgb(236, 236, 236) solid;
 }
 
 .headingClass{
