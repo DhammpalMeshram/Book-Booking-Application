@@ -9,7 +9,7 @@ import { getProductDetails } from '../../../Redux/actions/productActions';
 //component imports
 import LeftSide from './LeftSide/LeftSide';
 import RightSide from './RightSide/RightSide';
-// import Loading from '../../Loading/Loading';
+import Loading from '../../Loading/Loading';
 
 
 const DetailsPage =()=>{
@@ -30,8 +30,8 @@ const DetailsPage =()=>{
                     <LeftSide product={product}/>
                     <RightSide product={product}/>
                 </div>
-            // :<Loading/>  
-            :null 
+            :<Loading/>  
+             
             }
         </>
     )
