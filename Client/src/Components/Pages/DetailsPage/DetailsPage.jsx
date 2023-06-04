@@ -2,12 +2,9 @@ import React, {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom'
 
 // redux imports
-// import { useSelector, useDispatch } from 'react-redux';
-// import { getProductDetails } from '../../../redux/actions/productActions';
+import { useSelector, useDispatch } from 'react-redux';
+import { getProductDetails } from '../../../Redux/actions/productActions';
 
-
-
-import { products } from '../../../Constants/Data';
 
 //component imports
 import LeftSide from './LeftSide/LeftSide';
@@ -18,20 +15,14 @@ import RightSide from './RightSide/RightSide';
 const DetailsPage =()=>{
     const params = useParams();
     const id = params.id;
-    // const dispatch = useDispatch();
-    // const {product} = useSelector(state=> state.getProductDetail);
-
-    // useEffect(()=>{
-    //     dispatch(getProductDetails(id));
-    // },[dispatch, id])
-    const [product, setProduct] = useState({});
+    const dispatch = useDispatch();
+    const {product} = useSelector(state=> state.getProductDetail);
 
     useEffect(()=>{
-        let getproduct = products.find(item=> item.id===id);
-        setProduct(getproduct);
-    },[])
+        dispatch(getProductDetails(id));
+    },[dispatch, id])
 
-
+    
     return (
         <>{
             product && Object.keys(product).length>0 ?
