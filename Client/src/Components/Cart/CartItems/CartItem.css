@@ -1,6 +1,12 @@
 .cart_left { /* main container*/
     width :65%;
     border: 1px solid #e2e2e2;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-SMSqgTfLIu7ELzXsIofUGZnJODkyiMtjQA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
 }
 
 .cart_left >.header1 {
@@ -9,6 +15,8 @@
     justify-content: space-between;
     margin-bottom: 10px;
     background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .cart_left >.header1 > button {
@@ -77,7 +85,7 @@
 .items_container > .p_details {
     margin: 10px 0px 10px 0px;
     padding: 0px;
-    width :40%;
+    width :60%;
 }
 
 .items_container > .p_details > .title {
@@ -101,11 +109,6 @@
     padding: 5px 0px;
     display: flex;
     align-items: center;
-}
-
-.items_container > .p_details >.seller > img { /* assured images*/
-    width: 60px;
-    margin-left: 10px;
 }
 
 .items_container > .p_details > .cost {  /*cost*/
@@ -134,7 +137,7 @@
     color: #000;
     font-size: 16px;
     font-weight: 600;
-    margin-top: 42px;
+    margin-top: 55px;
     background-color: #fff;
     border: none;
     outline: none;
@@ -148,24 +151,25 @@
 .cart_left> .place_container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding : 16px 22px;
     background-color:#fff;
-    box-shadow: 0 -2px 10px 0 rgb( 0 0 0/20%);
-    border-top: 1px solid #f0f0f0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 10px;
 }
 
 .cart_left> .place_container> button {
-    display: flex;
+     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
     background-color: #fb641b;
     color: #fff;
     width: 250px;
     height: 51px;
     border: none;
     outline: none;
-    border-radius: 2px;
-    cursor: pointer;
+    border-radius: 5px;
+    cursor: pointer; 
+    font-weight: bold;
 }

@@ -8,7 +8,7 @@ import BookCard from '../../BookCard/BookCard';
 import { useSelector } from 'react-redux';
 
 import HomeIcon from '@mui/icons-material/Home';
-
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 
 
@@ -44,12 +44,15 @@ const CategoryPage = ()=>{
                 </div>
                 :<div id="emptyPage">
                     <h1><i>We are Sorry, Book you are looking for is not yet available</i></h1><br></br>
-                    <button>
+                    <Link to="/" className="emptyLink">
                         <HomeIcon/>
-                        <Link to="/" ><h3>Go to Home</h3></Link>
-                    </button>
+                        <h4>Go to Home</h4>
+                    </Link>
+                    <Link to="/cart" className="emptyLink">
+                        <ShoppingCartIcon/>
+                        <h4>Go to Cart</h4>
+                    </Link>
                     <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuJRhK21NTMyFsSCKKkfUiXFIA236mvKmLrw&usqp=CAU" alt="commng soon"/>
-                {/* <button><Link to="/cart" ><h3>Go to Cart</h3></Link></button> */}
                 </div>
             }
         </div>
