@@ -1,6 +1,8 @@
 import axios from "axios"
 import * as actionTypes from "../constants/cartConstants";
-const url = "http://localhost:8000";
+// const url = "http://localhost:8000";
+// const url = "https://wishboookbackend.onrender.com";
+const url = "https://flipcartbackend-o3a5.onrender.com";
 
 
 // middleware to get product data of id received
