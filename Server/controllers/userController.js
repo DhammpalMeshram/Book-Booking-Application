@@ -36,20 +36,27 @@ export const signUpController = async (req, res)=>{
 // controller to check user signin data
 export const signInController = async (req, res)=>{
     try{
+        // check for 
         const existUser = await User.findOne({$or: [{email:req.body.username}, {mobileNumber: req.body.username}]});
         
         if(!existUser){
             res.status(401).json({message:"You don't have an account. Plese sign in first"});
         }
+
         
-        else if(bcrypt.compareSync(existUser, req.body.password)){
-            res.status(200).json({
-                username:existUser.username, 
-                id: existUser.email,
-                cartItems: existUser.cartItems,
-                message:"log in successfull"});
-            }            
-        else res.status(401).json({message:"Incorrect Password"});
+        else{
+            //check for valid password
+            let result = await bcrypt.compare(req.body.password, existUser.password);
+            
+            if(result){
+                res.status(200).json({
+                    username:existUser.username, 
+                    id: existUser.email,
+                    cartItems: existUser.cartItems,
+                    message:"log in successfull"});
+            }
+            else res.status(401).json({message:"Incorrect Password"});  
+        }
     }
     catch(err){
         res.status(500).json({message:err.message});
