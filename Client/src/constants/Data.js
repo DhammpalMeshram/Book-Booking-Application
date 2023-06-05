@@ -34,6 +34,8 @@ export const authorsArray = ["A.K. Gandhi","Agatha Christie","Blake Olivie","Bro
 //list of sellers
 export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","BestsellingBooks","Dunagiribookstore","FINDINGBOOKS1","GlobalRetailVentures","krishnastoreCompany","Micybook","NSPRetail","NEOSELLERS","OverseasOnlineShop","Sumitbookstor1","SUGSHAANnet","SrishtiPD","Samaoppai","Seagroups","Repro Books on Demand","TDVentures","VIKASONNET",]
 
+//list of price range 
+export const priceArray  =[100,200,300,400,500,600,700,800,900,1000,2000,3000,4000,5000,6000]
 
 /* Sample product Schema
 

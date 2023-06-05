@@ -43,7 +43,7 @@ const LoginForm = ({setUser,setOpen})=> {
         // send data to backend for validation
         const data  = await authunticateSignIn(userData);
 
-        if(data.username){   
+        if(data?.username){   
             sessionStorage.setItem("flipcartUser",`${data.username}`);
             mycontext.setLoggedIn(true);
             mycontext.setUserName(data.username)

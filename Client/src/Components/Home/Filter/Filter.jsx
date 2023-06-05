@@ -2,7 +2,7 @@ import "./Filter.css";
 import React,{useState} from "react";
 
 // import from Data.js
-import { authorsArray, sellerArray } from '../../../Constants/Data';
+import { authorsArray, sellerArray, priceArray } from '../../../Constants/Data';
 
 // redux imports
 import { useSelector } from "react-redux";
@@ -22,6 +22,18 @@ const Filter = ({setFIlteredBooks,setIsFIlterActive})=>{
         let findItems = products.filter((item) =>{ 
             if(item.type.includes(e.target.value)) return true;
             
+        })
+        setFIlteredBooks(findItems);
+        setIsFIlterActive(true);
+    }
+
+    //function to filter books by price
+    const filterByPrice =(e)=>{
+        setSelected(e.target.value);
+        // eslint-disable-next-line
+        let findItems = products.filter((item) =>{ 
+            if(Number(item.type[item.type.length-1]) <= Number(e.target.value))
+                return true;
         })
         setFIlteredBooks(findItems);
         setIsFIlterActive(true);
@@ -56,6 +68,13 @@ const Filter = ({setFIlteredBooks,setIsFIlterActive})=>{
                 <option value="">Name</option>
                 {
                     alpha.split("").map(item=><option  key={item} value={item}>{item}</option>)
+                }
+            </select>
+
+            <select value={selected} onChange = {filterByPrice}>
+                <option value="">Price</option>
+                {
+                    priceArray.map(item=><option  key={item} value={item}>{item}</option>)
                 }
             </select>
             <button id="clearFilter" onClick={resetHome}>Clear All</button>
