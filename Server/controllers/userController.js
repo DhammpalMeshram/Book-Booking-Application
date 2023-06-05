@@ -1,19 +1,29 @@
-import User from "../modules/user.js"; 
+import User from "../modules/user.js";
+import bcrypt from "bcryptjs";
+
 
 //controller to check user sign in data 
 export const signUpController = async (req, res)=>{
     try{
+        //check if email or mobile number aleady have account
         const existEmail = await User.findOne({email: req.body.email});
         const existNumber = await User.findOne({mobileNumber: req.body.mobileNumber});
     
+        //if email exist return
         if(existEmail) 
             return res.status(401).json({message: "account with email already exist"})
         
+        //if password exist return
         if(existNumber) 
             return res.status(401).json({message: "account with mobile number already exist"})
 
+        //secure password with bycript
+        let oldPassword = req.body.password;
+        let securePass = bcrypt.hashSync(oldPassword, 10);
+        
+        //save user to database
         const user = req.body;
-        const newUser = new User(user);
+        const newUser = new User({...user, password:securePass});
         await newUser.save();
 
         res.status(201).json({user, message:"Sign up Successfull"});
@@ -31,7 +41,8 @@ export const signInController = async (req, res)=>{
         if(!existUser){
             res.status(401).json({message:"You don't have an account. Plese sign in first"});
         }
-        else if(existUser.password === req.body.password){
+        
+        else if(bcrypt.compareSync(existUser, req.body.password)){
             res.status(200).json({
                 username:existUser.username, 
                 id: existUser.email,

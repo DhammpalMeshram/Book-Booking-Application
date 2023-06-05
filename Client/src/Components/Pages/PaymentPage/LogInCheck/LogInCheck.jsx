@@ -88,6 +88,7 @@ const LogInCheck = ({setAdd})=>{
                             label={"Enter Password"} 
                             name="password" 
                             onChange={onInputChange}
+                            type="password"
                         />
                         {   error.password ? 
                             <p className='username_error'>{error.password}</p> 

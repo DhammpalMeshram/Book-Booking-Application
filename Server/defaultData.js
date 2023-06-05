@@ -1,5 +1,5 @@
 import Product from "./modules/product.js";
-// import User from "./modules/user.js";
+import User from "./modules/user.js";
 import { products } from "./Constants/Data.js";
 
 // const Product = require("./modules/product.js");
@@ -17,8 +17,8 @@ const defaultData = async ()=>{
         // console.log("All products deleted");
 
         //to insert all data
-        await Product.insertMany(products);
-        console.log("Data inserted Successfully");
+        // await Product.insertMany(products);
+        // console.log("Data inserted Successfully");
     }
     catch(err){
         console.log("Error while inserting default Data "+err.message);
