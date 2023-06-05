@@ -34,9 +34,11 @@
     border-bottom: 3px solid #fff;
     cursor: pointer;
 }
+
 .e_header1 > button:focus {
     color:#2874f0;
 }
+
 .e_header2 {
     background-color: #fff;
     display: flex;
@@ -46,6 +48,7 @@
     padding: 30px;
     
 }
+
 .e_header2 > #mis {
     font-size: 20px;
     color:black;
@@ -53,10 +56,12 @@
     padding: 10px;
     background-color: #ffffff;
 }
+
 .e_header2 > #direction {
     font-size: 12px;
     color:black;
 }
+
 .e_header2 > button {
     width : 180px;
     padding: 13px 0px;

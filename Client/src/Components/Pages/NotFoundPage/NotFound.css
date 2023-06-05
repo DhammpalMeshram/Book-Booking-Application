@@ -1,0 +1,28 @@
+#notFound > img{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+#notFound >#help {
+    position: absolute;
+    z-index: 100;
+    top: 200px;
+    left: 200px;
+    color: white;
+}
+
+#notFound >#help >button {
+    margin-left: 200px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: rgb(65, 61, 61);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-top: 2px white solid;
+    border-left: 2px white solid;
+}

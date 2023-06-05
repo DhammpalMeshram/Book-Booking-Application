@@ -1,11 +1,11 @@
 import React, {useState, useContext,useEffect} from 'react';
 import './LogInCheck.css';
 
+// api function imports
 import { authunticateSignIn } from '../../../../service/api';
 
 //context Api imports
 import { MyContext } from '../../../../Context/DataProvider';
-
 
 //matrial ui imports
 import { TextField } from '@mui/material';
@@ -15,7 +15,7 @@ import StarIcon from '@mui/icons-material/Star';
 import DoneIcon from '@mui/icons-material/Done';
 
 
-const LogInCheck = ({setAdd, universalState})=>{
+const LogInCheck = ({setAdd})=>{
     const myContext = useContext(MyContext);
     const [error,setError] = useState({username:'', password:''});
     const [userData,setUserData] = useState({username:'', password:''});
@@ -70,15 +70,33 @@ const LogInCheck = ({setAdd, universalState})=>{
             !myContext.loggedin &&  
                 <div id="log">
                     <div id="log_form">
-                        <TextField  style={{marginBottom:'5px', width:'300px'}} variant='standard' label={"Enter Email/Mobile number"} name="username" onChange={onInputChange}/><br></br>
+                        <TextField  
+                            style={{marginBottom:'5px', width:'300px'}} 
+                            variant='standard' 
+                            label={"Enter Email/Mobile number"} 
+                            name="username" 
+                            onChange={onInputChange}/><br></br>
 
-                        {error.username? <p className='username_error'>{error.username}</p>: null}
+                        {   error.username? 
+                            <p className='username_error'>{error.username}</p>
+                            :null
+                        }
 
-                        <TextField style={{marginBottom:'5px', width:'300px'}} variant='standard' label={"Enter Password"} name="password" onChange={onInputChange}/>
-                        {error.password ? <p className='username_error'> {error.password}</p> : null}
-                        <p className='text'>By continuing, you agree to Flipkart's <span>Terms of Use</span> and <span>Privacy Policy</span>.</p>
-                            
-                            <button className='login_btn' onClick={onLoginClick}>Login</button>
+                        <TextField 
+                            style={{marginBottom:'5px', width:'300px'}} 
+                            variant='standard' 
+                            label={"Enter Password"} 
+                            name="password" 
+                            onChange={onInputChange}
+                        />
+                        {   error.password ? 
+                            <p className='username_error'>{error.password}</p> 
+                            : null
+                        }
+                        <p className='text'>By continuing, you agree to WishBook's <span>Terms of Use</span> and <span>Privacy Policy</span>.</p>
+                        <button className='login_btn' onClick={onLoginClick}>
+                            Login
+                        </button>
                     </div>
                     <div id="log_terms">
                         <p style={{color:'gray'}}>Advantages of secure log in</p>

@@ -1,4 +1,6 @@
 import React, {useEffect} from 'react';
+
+//router imports
 import {useParams} from 'react-router-dom'
 
 // redux imports
@@ -17,6 +19,7 @@ const DetailsPage =()=>{
     const dispatch = useDispatch();
     const {product} = useSelector(state=> state.getProductDetail);
 
+    //maek api call for getting product with id.
     useEffect(()=>{
         dispatch(getProductDetails(id));
     },[dispatch, id])
@@ -29,8 +32,7 @@ const DetailsPage =()=>{
                     <LeftSide product={product}/>
                     <RightSide product={product}/>
                 </div>
-            :<Loading/>  
-             
+                :<Loading/>  
             }
         </>
     )

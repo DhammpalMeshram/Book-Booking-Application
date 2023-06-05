@@ -1,7 +1,7 @@
 import "./BookCard.css";
 
+//router imports
 import { Link } from "react-router-dom";
-
 
 const BookCard = ({product})=>{
     return(

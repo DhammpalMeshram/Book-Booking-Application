@@ -15,7 +15,6 @@ export const navData = [
 ];
 
 
-
 // data for latest books in trend
 export const bannerData = [
     { id: 1, url: 'https://c4.wallpaperflare.com/wallpaper/413/495/729/game-of-thrones-wallpaper-preview.jpg' },
@@ -25,16 +24,12 @@ export const bannerData = [
     { id: 5, url: 'https://c4.wallpaperflare.com/wallpaper/797/633/218/tyrion-lannister-game-of-thrones-wallpaper-preview.jpg' },
     { id: 6, url: 'https://c4.wallpaperflare.com/wallpaper/620/105/243/the-lord-of-the-rings-the-hobbit-hd-the-hobbit-movie-poster-wallpaper-preview.jpg' },
     { id: 7, url: 'https://wallpapercave.com/dwp1x/BosZbuR.jpg'}
-    
-]
-
+];
 
 
 
 // list of authors
 export const authorsArray = ["A.K. Gandhi","Agatha Christie","Blake Olivie","Brown Dan","Carter Eva","DR A P J Abdul Kalam","Daniel Kahneman","Du Maurier Daphne","Genric Author","George S. Clason","Gillian Flynn","Graham Benjamin","Haynes Natalie","Hill Napoleon","Isaacson Walter","J. R. R. Tolkien","Lewis C. S.","Martin George R. R.","Obama Michelle","Prose Nita","R. Stephen Covey","Riley Lucinda","Robbins Anthony","Robbins Tony","Robert T. Kiyosaki","Rowling J. K.","Thomas J","Yousafzai Malala"]
-
-
 
 //list of sellers
 export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","BestsellingBooks","Dunagiribookstore","FINDINGBOOKS1","GlobalRetailVentures","krishnastoreCompany","Micybook","NSPRetail","NEOSELLERS","OverseasOnlineShop","Sumitbookstor1","SUGSHAANnet","SrishtiPD","Samaoppai","Seagroups","Repro Books on Demand","TDVentures","VIKASONNET",]
@@ -63,18 +58,17 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
         tagline: 'Free Delivery',
         type : ['fiction',"The Hobbit","Riley Lucinda","Amazing Buy" ],
     }
-
     */
 
+    //images for the payment page
     export const paytm_img_url = "https://rukminim1.flixcart.com/www/96/96/promos/01/09/2020/a07396d4-0543-4b19-8406-b9fcbf5fd735.png?q=100"
 
     export const upi_wallet = "https://static-assets-web.flixcart.com/fk-p-linchpin-web/batman-returns/logos/UPI.gif";
 
     export const wallet_img_url = "https://static-assets-web.flixcart.com/fk-p-linchpin-web/batman-returns/logos/Wallets.gif";
 
+    export const emptyImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZph5-UjBkOIzz6YyK6iTt-_B3lEqdmHQZ7g&usqp=CAU';
 
-
-    
 
     export const products = [
         { 

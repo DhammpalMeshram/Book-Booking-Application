@@ -29,27 +29,25 @@
     box-shadow: 3px 3px 4px 4px gray;
     margin-bottom: 15px;
 }
+
 #container >div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
-    
+    justify-content: space-between; 
 }
+
 #container >div > p{
     padding: 0;
     margin: 0 0 20px 0;
     font-size :16px;
     font-weight:600;
-    color: #878787;
-    
+    color: #878787;    
 }
 
 #container >div > span{
     margin: 0 0 16px 0;
     font-size :16px;
-    font-weight:600;
-    
+    font-weight:600; 
 }
 
 #total {
@@ -62,11 +60,13 @@
     box-shadow: 3px 3px 4px 4px gray;
     margin-bottom: 15px;
 }
+
 #total > h3 {
     margin: 0;
     padding: 0;
     font-family: inherit;
 }
+
 #discount {
     color: green;
     font-weight: 600;

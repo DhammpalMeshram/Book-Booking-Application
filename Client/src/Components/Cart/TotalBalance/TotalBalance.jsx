@@ -1,5 +1,5 @@
-import React from 'react'
 import './TotalBalance.css';
+import React from 'react'
 
 
 const TotalBalance = ({cartProducts})=>{
@@ -7,6 +7,7 @@ const TotalBalance = ({cartProducts})=>{
     let totalMrp = 0;
     let totalCost = 0;
 
+    // Calculate total price for every cart item
     cartProducts?.forEach(item=> {
         totalMrp += Number(item.price.mrp);
         totalCost += Number(item.price.cost);

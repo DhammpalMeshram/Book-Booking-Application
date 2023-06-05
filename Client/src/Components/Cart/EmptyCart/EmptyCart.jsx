@@ -1,11 +1,16 @@
-import React from 'react';
 import './EmptyCart.css';
+import React from 'react';
+
+//routing imports
 import {useNavigate} from "react-router-dom";
+
+//image import from Data.js
+import {emptyImage} from "../../../Constants/Data";
 
 
 const EmptyCart =()=>{
     const navigate = useNavigate();
-    const emptyImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZph5-UjBkOIzz6YyK6iTt-_B3lEqdmHQZ7g&usqp=CAU';
+    
     return (
         <div className='empty'>
             <div id="e_container">

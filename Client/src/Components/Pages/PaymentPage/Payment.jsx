@@ -1,7 +1,10 @@
 import './Payment.css';
 import React, {useContext, useEffect, useState} from 'react';
 
+//routing imports
 import {useNavigate} from "react-router-dom";
+
+//context api imports
 import { MyContext } from '../../../Context/DataProvider';
 
 // componenets import s
@@ -24,6 +27,7 @@ const Payment  = ()=>{
     const myContext = useContext(MyContext);
     const navigate = useNavigate();
  
+    // helping states for switching into diiferent pay blocks
     const [add, setAdd] = useState(false);
     const [summary, setSummary] = useState(false);
     const [closeSummary, setCloseSummary] = useState(false);
@@ -31,7 +35,7 @@ const Payment  = ()=>{
     const [payParams, setPayParams] = useState(false);
     const [isBuyNow, setisBuyNow] = useState("");
     
-
+    //initial check for user entry way
     useEffect(()=>{
         // if user has entered trough buy now
         if(myContext.buyNow)  setisBuyNow("true");       
@@ -57,19 +61,21 @@ const Payment  = ()=>{
     const removeItemFromCart =(e)=>{
         dispatch(removeFromCart(e.target.id));
     
-        //if state.length is zero then show empty cart message and redirect user
+        //if state.length is zero then show empty cart message 
+        //and redirect user
         if(cartItems.length === 1){
             setisBuyNow("empty");
         }
     }
 
-    // function to show empty cart when user comes from the buyNow button
+    // function to show empty cart when user comes from the buyNow 
+    //button
     const showEmpty = ()=>{
         setisBuyNow("empty");
     }
 
-    //function to redirect user to the home page when he removes all items
-    // from cart
+    //function to redirect user to the home page when he removes all 
+    //items from cart
     const onAddClick = ()=>{
         myContext.setCheckout(false);
         navigate("/");
@@ -78,7 +84,11 @@ const Payment  = ()=>{
     return (
         <div id="pay_container">
             <LogInCheck setAdd = {setAdd}/>
-            <DeliveryAdd setSummary = {setSummary} add={add} setAdd = {setAdd}/>
+            <DeliveryAdd 
+                setSummary = {setSummary} 
+                add={add} 
+                setAdd = {setAdd}
+            />
             
             <div id="order_sum">
                 <div className="head">
@@ -90,19 +100,31 @@ const Payment  = ()=>{
                 </div>
                 {  // when user enters via byNow button click;
                     isBuyNow === "true" && summary &&
-                    <ProductCard item={product} removeItemFromCart ={showEmpty} addElipsis ={addElipsis} />
+                    <ProductCard 
+                        item={product} 
+                        removeItemFromCart ={showEmpty} 
+                        addElipsis ={addElipsis} 
+                    />
                 }
                 {  // when user removes byNow item from cart;
-                    isBuyNow === "empty" && <>
-                    <h2 style={{textAlign:"center"}}>Your cart is Empty</h2>
-                    <button onClick={(onAddClick)}>Add items</button>
+                    isBuyNow === "empty" && 
+                    <>
+                        <h2 style={{textAlign:"center"}}>
+                            Your cart is Empty
+                        </h2>
+                        <button onClick={(onAddClick)}>Add items</button>
                     </>
                 }
 
                 {  // when user enters via place order button from cart
                     isBuyNow === "" && cartItems.length >0 && summary &&
                     cartItems.map((item) =>                         
-                        <ProductCard key={item.id} item={item} removeItemFromCart ={removeItemFromCart} addElipsis ={addElipsis} />
+                        <ProductCard 
+                            key={item.id} 
+                            item={item} 
+                            removeItemFromCart ={removeItemFromCart} 
+                            addElipsis ={addElipsis} 
+                        />
                     )
                 }
                  {
@@ -111,7 +133,13 @@ const Payment  = ()=>{
                 }
             </div>
 
-            <PayOptions setPayment={setPayment} payParams ={payParams} setPayParams = {setPayParams} payment= {payment} summary = {summary}/>
+            <PayOptions 
+                setPayment={setPayment} 
+                payParams ={payParams} 
+                setPayParams = {setPayParams} 
+                payment= {payment} 
+                summary = {summary}
+            />
         </div>
     )
 }

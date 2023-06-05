@@ -16,12 +16,12 @@ import HomeIcon from '@mui/icons-material/Home';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 
-
 const CategoryPage = ()=>{
     const params = useParams();
     const {products} = useSelector(state=> state.getProducts);
     const [state, setState] = useState([]);
 
+    //function to extract matching products from products array
     const getProducts = ()=>{
         let searchTerm = params.serchname;
         let productfound = [];

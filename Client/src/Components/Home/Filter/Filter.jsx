@@ -1,23 +1,25 @@
 import "./Filter.css";
 import React,{useState} from "react";
 
+// import from Data.js
 import { authorsArray, sellerArray } from '../../../Constants/Data';
-import { useSelector, useDispatch } from "react-redux";
 
-import { products } from "../../../Constants/Data";
+// redux imports
+import { useSelector } from "react-redux";
+
 
 const Filter = ({setFIlteredBooks,setIsFIlterActive})=>{
     const alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    // const {products} = useSelector(state=> state.getProducts);
-    const dispatch = useDispatch();
+    const {products} = useSelector(state=> state.getProducts);
     const [selected, setSelected] = useState("");
 
 
     // function to filter books by author, name or seller
     const filterBySelection = (e)=>{
         setSelected(e.target.value);
-        let findItems = products.filter(item =>{ 
+         // eslint-disable-next-line
+        let findItems = products.filter((item) =>{ 
             if(item.type.includes(e.target.value)) return true;
             
         })
@@ -34,7 +36,7 @@ const Filter = ({setFIlteredBooks,setIsFIlterActive})=>{
 
     return(
         <div  id="filterContainer">
-            <span>Sort By : </span>
+            <span>Filter Books By : </span>
             
             <select  value={selected} onChange = {filterBySelection}>
                 <option value="">Autor</option>

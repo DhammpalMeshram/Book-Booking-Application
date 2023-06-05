@@ -3,9 +3,12 @@ import React from 'react';
 
 import { bannerData } from '../../../Constants/Data';
 
-// import from material ui
+// import from carousal 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+
+//materila ui imports
+import FlareIcon from '@mui/icons-material/Flare';
 
 // function to decide how many items to show on corausal
 const responsive = {
@@ -27,6 +30,11 @@ const responsive = {
 const Banner =()=>{
     return (
       <div className="container">
+          <div className='glow'>
+            <FlareIcon/>
+            <i>Most Polpular of all time</i>
+            <FlareIcon/>
+          </div>
           <Carousel 
               responsive={responsive}
               swipeable={false}

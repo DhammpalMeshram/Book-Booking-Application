@@ -12,10 +12,12 @@ const Profile = ()=>{
     const myContext = useContext(MyContext);
     const [open, setOpen] = useState(false);
 
+    // function to open logout option
     const handleClick=(event)=>{
         setOpen(event.currentTarget);
     }
 
+    //function to close logout option
     const handleClose=()=>{
         setOpen(false);
     }
@@ -39,7 +41,9 @@ const Profile = ()=>{
             >
                 <MenuItem onClick={(e)=>{handleClose(e); logOut()}}>
                     <PowerSettingsNewIcon color='primary' fontSize="small"/>
-                    <p style={{margin:'0px', padding:'0px 0px 0px 10px', fontSize:'14px'}}>Logout</p>
+                    <p style={{margin:'0px', padding:'0px 0px 0px 10px', fontSize:'14px'}}>
+                        Logout
+                    </p>
                 </MenuItem>
             </Menu>
         </>

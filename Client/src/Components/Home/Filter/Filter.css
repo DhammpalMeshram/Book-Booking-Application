@@ -1,6 +1,6 @@
 
 #filterContainer {
-    margin: 10px 0px;
+    margin: 10px 10px;
     padding: 5px 10px;
     display: flex;
     align-items: center;
@@ -9,6 +9,7 @@
     font-weight: bold;
     color:#1645ed;
     background-color: white;
+    font-style: italic;
 }
 
 #filterContainer select{
@@ -19,4 +20,5 @@
 #clearFilter {
     padding: 5px 10px;
     font-size: 16px;
+    cursor: pointer;
 }

@@ -12,7 +12,7 @@ const DeliveryAdd = ({setSummary, add, setAdd})=>{
     const [address, setAddress] = useState({area:"", city:"",state:"", pincode:""});
     const [addError,setAddError] = useState({});
 
-    //dynamic uddation of input values
+    //dynamic updation of input values
     const onAddChanged = (e)=>{
         setAddress({...address, [e.target.name] : e.target.value})
     }

@@ -25,6 +25,7 @@
     height:24px;
     margin-right: 20px;
 }
+
 #pay_option > .pay > p{
     display: block;
     width: 90%;
@@ -45,11 +46,13 @@
     display: inline-block;
     width: 90%;
 }
+
 #upi_container > .sec {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
+
 #upi_container > .sec > input {
     width: 18px;
     height: 18px;
@@ -57,6 +60,7 @@
     margin-right: 20px;
     margin-bottom: 5px;
 }
+
 #upi_container > .sec > label {
     display: block;
     width: 80%;

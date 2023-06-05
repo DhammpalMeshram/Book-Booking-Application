@@ -1,7 +1,10 @@
 import './CartItem.css';
 import React, { useContext } from 'react';
 
+//Context Api imports
 import { MyContext } from '../../../Context/DataProvider';
+
+// routing imports
 import {useNavigate} from 'react-router-dom';
 
 //component imports
@@ -16,7 +19,6 @@ const CartItem =({cartProducts})=>{
     const navigate = useNavigate();
     const dispatch = useDispatch();
     
-
     // function to add elipsis in the title
      const addElipsis = (title)=>{
         if(title.length > 50) return `${title.substring(0,50)}...`
@@ -66,7 +68,9 @@ const CartItem =({cartProducts})=>{
                                 <span className='mpr'>₹{item.price.mrp}</span>
                                 <span className='cost'>₹{item.price.cost}</span>
                                 <span className='off'>{item.price.discount} off</span>
-                                <button onClick={()=>removeItemFromCart(item.id)} id={item.id}>REMOVE</button>
+                                <button onClick={()=>removeItemFromCart(item.id)} id={item.id}>
+                                    REMOVE
+                                </button>
                             </div>
                         </div>
                     )

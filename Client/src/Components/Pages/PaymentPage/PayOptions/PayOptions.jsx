@@ -1,14 +1,17 @@
 import React,{useState, useContext} from 'react';
 import './PayOptions.css';
 
+//context api imports
 import { MyContext } from '../../../../Context/DataProvider';
+
+//routing imports
 import { useNavigate} from 'react-router';
 
 //material ui options
 import { TextField } from '@mui/material';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 
-//images inport fron constant Data file
+//images imports from constant Data file
 import {paytm_img_url, wallet_img_url, upi_wallet} from "../../../../Constants/Data";
 
 

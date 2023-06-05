@@ -6,13 +6,10 @@ import {AppBar, Toolbar, styled, List, ListItem, Badge} from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 
-
-
-//global state imports
+//Context api imports
 import { MyContext } from '../../Context/DataProvider';
 
 //redux imports
@@ -31,9 +28,11 @@ const StyledHeader = styled(AppBar)`
   height:55px;
 `
 
+//List style Object
 const ListStyleObj = { position:'absolute',top:'45px',left:"268px", 
     color:"black", backgroundColor :"white", maxHeight:"300px", 
     width:"478px", overflow: 'auto', fontSize:"14px", zIndex:"100" };
+
 
 const Header =()=>{
     const {products} = useSelector(state=> state.getProducts);
@@ -59,7 +58,8 @@ const Header =()=>{
     // function to open the login window
     const onLoginCLick =()=>{ setOpen(true); }
 
-    // function to display list when text is typed in input
+    // function to navigate user to product details page
+    // if user clicks on search icon
     const onSerchClick =()=>{
         if(InputRef.current.value ==='' && productId === "") return;
         navigate(`/product/${productId}`)
@@ -120,24 +120,28 @@ const Header =()=>{
                     }
                 </List>
             } 
-            {   !myContext.checkout && 
+            {   
+            !myContext.checkout && 
                 <div className={'header_3'}>
                     { myContext.loggedin ? <Profile/>:<button onClick={onLoginCLick}>Login</button> }
                 </div>
             }
-            {   !myContext.checkout && 
+            {   
+            !myContext.checkout && 
                 <div className='header_4'>
                     <AttachMoneyIcon/>
                     <p>Sell Your Books</p>
                 </div>
             }
-            {   !myContext.checkout && 
+            {  
+             !myContext.checkout && 
                 <div className='header_5'>
                     <span>More</span>
                     <ExpandMoreIcon/>
                 </div>
             }
-            {   !myContext.checkout && 
+            {   
+            !myContext.checkout && 
                 <div className='header_6' onClick={()=>navigate('/cart')}>
                     <ShoppingCartIcon/>
                     <Badge badgeContent={cartItems.length} color='secondary'>

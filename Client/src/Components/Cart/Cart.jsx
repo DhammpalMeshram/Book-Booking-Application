@@ -6,11 +6,11 @@ import CartItem from './CartItems/CartItems';
 import TotalBalance from './TotalBalance/TotalBalance';
 import EmptyCart from './EmptyCart/EmptyCart';
 
+//redux imports
 import { useSelector } from 'react-redux';
 
 const Cart =()=>{
     const {cartItems} = useSelector(state=> state.cart);
-    console.log(cartItems);
     
     return (
         cartItems.length?

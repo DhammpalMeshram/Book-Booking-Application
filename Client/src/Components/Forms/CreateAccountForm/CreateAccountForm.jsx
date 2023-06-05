@@ -1,12 +1,16 @@
 import './CreateAccountForm.css';
 import React,{useState} from 'react';
 
+//material ui imports
 import {TextField} from '@mui/material';
+
+// validation file import
 import { signUpFormValidation } from '../../../utils/validateSignIn';
+
+// api file import
 import { authunticateSignUp } from '../../../service/api';
 
 const CreateAccountForm =({setUser})=>{
-
     const Styled = {width:'100%', paddingBottom:'5px'};
     
     const [newUser, setNewUser] = useState({
@@ -29,29 +33,32 @@ const CreateAccountForm =({setUser})=>{
 
 
     const onFormSubmitHandler = async (e) =>{
-        setErrors({...errors, firstName:'',lastName:'', email:'',mobileNumber:'', username:"",password:""})
+        setErrors({...errors, firstName:'',lastName:'', email:'',
+                    mobileNumber:'', username:"",password:""})
     
         // frontend validation
         const validationResult = signUpFormValidation(newUser);
-        // if no error is present
+        // if Error is present
         if(validationResult != null){ setErrors(validationResult); }
-    
+        // if no Error is present
         if(validationResult === null){
             //send data to backend for validation
             await authunticateSignUp(newUser);
             
-            setErrors({...errors,firstName:'',lastName:'', email:'',mobileNumber:'', username:"",password:""});
-            setNewUser({...newUser,firstName:'',lastName:'', email:'',mobileNumber:'', username:"",password:""});
+            setErrors({...errors,firstName:'',lastName:'', email:'',
+                        mobileNumber:'', username:"",password:""});
+            setNewUser({...newUser,firstName:'',lastName:'', email:'',
+                        mobileNumber:'', username:"",password:""});
             setUser(true);  
         }
     }
     
-    // function to toggle form 
+    // function to toggle form from Log in to Sign in and Vice versa
     const onExistingAccountClick =()=>{
         setUser(true);
     }
 
-    // function to get value from user
+    // function to get valuefrom user and dynamically update it.
     const onInputChange =(e)=>{
         let inputValue = e.target.value.trim();
         setNewUser({...newUser,[e.target.name]:inputValue});

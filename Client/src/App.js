@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 
+//routing imports
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //component import
@@ -11,7 +12,7 @@ import DetailsPage from './Components/Pages/DetailsPage/DetailsPage';
 import Cart from './Components/Cart/Cart';
 import EmptyCart from './Components/Cart/EmptyCart/EmptyCart';
 import Payment from './Components/Pages/PaymentPage/Payment';
-// import NotFound from './Components/NotFound/NotFound';
+import NotFound from './Components/Pages/NotFoundPage/NotFound';
 import CategoryPage from './Components/Pages/CategoryPage/CategoryPage';
 import Footer from "./Components/Footer/Footer";
 
@@ -29,7 +30,7 @@ function App() {
               <Route path ='/emptyCart' element={<EmptyCart/>}/>
               <Route path ="/payment" element={<Payment/>}/>
               <Route path = "/:serchname" element = {<CategoryPage/>}/>
-              {/*<Route path='*' element={<NotFound />}/> */}
+              <Route path='*' element={<NotFound />}/>
             </Routes>
           </main>
           <Footer/>
