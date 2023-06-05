@@ -47,7 +47,7 @@ const Header =()=>{
 
     // to keep loged in user logged in if he is already logged in
     useEffect(()=>{
-        let isUserId = sessionStorage.getItem("flipcartUser");
+        let isUserId = sessionStorage.getItem("WishBookUser");
         if(isUserId && isUserId.length >4){
             myContext.setLoggedIn(true);
             myContext.setUserName(isUserId);

@@ -24,7 +24,7 @@ const Profile = ()=>{
 
     // function to logout the user
     const logOut =()=>{
-        sessionStorage.setItem("flipcartUser", "");
+        sessionStorage.setItem("WishBookUser", "");
         myContext.setLoggedIn(false);
     }
 

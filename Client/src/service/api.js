@@ -2,7 +2,9 @@ import axios from "axios";
 const url = "http://localhost:8000";
 
 
-// fucntion to authintiate user log in data
+
+
+// fucntion to authintiate user signUp data
 export const authunticateSignUp = async(userData)=>{
     try{
         const res =  await axios.post(`${url}/signup`, userData);
@@ -14,7 +16,7 @@ export const authunticateSignUp = async(userData)=>{
     }
 }
 
-// function to check and create new user
+// function to check user log in data
 export const authunticateSignIn = async(userData)=>{
     try{
         const res =  await axios.post(`${url}/signin`, userData);

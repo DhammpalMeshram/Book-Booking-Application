@@ -15,7 +15,7 @@ export const addToCart =(id, qty)=> async(dispatch)=>{
 } 
 
 // middleware to remove item from cart.
-export const removeFromCart= (id)=>(dispatch)=>{
+export const removeFromCart= (id)=>async (dispatch)=>{
     try{
         dispatch({type:actionTypes.REMOVE_FROM_CART, payload:id})
     }

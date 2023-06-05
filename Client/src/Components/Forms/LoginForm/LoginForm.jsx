@@ -44,7 +44,7 @@ const LoginForm = ({setUser,setOpen})=> {
         const data  = await authunticateSignIn(userData);
 
         if(data?.username){   
-            sessionStorage.setItem("flipcartUser",`${data.username}`);
+            sessionStorage.setItem("WishBookUser",`${data.username}`);
             mycontext.setLoggedIn(true);
             mycontext.setUserName(data.username)
             setOpen(false);
