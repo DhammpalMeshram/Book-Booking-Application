@@ -1,5 +1,5 @@
 import express from "express";
-// import {signUpController, signInController} from "../controllers/userController.js";
+import {signUpController, signInController} from "../controllers/userController.js";
 import { getAllProducts, getProductById } from "../controllers/productController.js";
 // import {storeToCartController,getAllcartData} from "../controllers/cartController.js";
 

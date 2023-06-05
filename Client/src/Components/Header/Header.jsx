@@ -31,7 +31,7 @@ const StyledHeader = styled(AppBar)`
   height:55px;
 `
 
-const ListStyleObj = { position:'absolute',top:'45px',left:"265px", 
+const ListStyleObj = { position:'absolute',top:'45px',left:"268px", 
     color:"black", backgroundColor :"white", maxHeight:"300px", 
     width:"478px", overflow: 'auto', fontSize:"14px", zIndex:"100" };
 
@@ -115,7 +115,7 @@ const Header =()=>{
             {   text && 
                 <List className={'listStyles'} style={ListStyleObj}>
                     {
-                        products.filter(product=>product.title.longTitle.toLowerCase().includes(InputRef.current.value.toLowerCase()))
+                        products?.filter(product=>product.title.longTitle.toLowerCase().includes(InputRef.current.value.toLowerCase()))
                         .map(product=>(<ListItem key={product.id} onClick={(e)=>openDetail(e,product.id)} style={{cursor:'pointer'}}>{product.title.longTitle}</ListItem>))
                     }
                 </List>
