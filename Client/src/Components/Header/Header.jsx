@@ -105,7 +105,7 @@ const Header =()=>{
                     <input 
                      id={'inputField'}
                      type={"text"} 
-                     placeholder={"Search for books, authors or stores"} 
+                     placeholder={"Search for books"} 
                      ref={InputRef}  
                      onChange={onInputChanged}
                     />

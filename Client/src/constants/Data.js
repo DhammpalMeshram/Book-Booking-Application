@@ -96,7 +96,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             description: "The classic bestseller behind this year's biggest movie, this film tie-in edition features the complete story of Bilbo Baggins' adventures in Middle-earth as shown in the film trilogy, with a striking cover image from Peter Jackson's film adaptation and drawings and maps by J.R.R. Tolkien. Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely travelling further than the pantry of his hobbit-hole in Bag End. But his contentment is disturbed when the wizard, Gandalf, and a company of thirteen dwarves arrive on his doorstep one day to whisk him away on an unexpected journey 'there and back again'. They have a plot to raid the treasure hoard of Smaug the Magnificent, a large and very dangerous dragon... The prelude to The Lord of the Rings, The Hobbit has sold many millions of copies since its publication in 1937, establishing itself as one of the most beloved and influential books of the twentieth century.",
             discount: '10% Off', 
             tagline: 'Free Delivery',
-            type : ['Fiction',"Fantasy","The Hobbit","Riley Lucinda","Amazing Buy" ],
+            type : ['Fiction',"Fantasy","The Hobbit","Riley Lucinda","Amazing Buy", "T", "360" ],
         },
         { 
             id: 'product26',
@@ -117,7 +117,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Martin George R. R.",
             seller : "BOOKSWAGONN",
-            type : ['Fantasy',"Game of Thrones","Martin George R. R.","BOOKSWAGONN"],
+            type : ['Fantasy',"Game of Thrones","Martin George R. R.","BOOKSWAGONN", "G", "7600"],
         },
         { 
             id: 'product27',
@@ -138,7 +138,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "J. R. R. Tolkien",
             seller : "samaoppai",
-            type : ['Fantasy',`The Hobbit & The Lord Of The Rings`,"J. R. R. Tolkien","samaoppai"],
+            type : ['Fantasy',`The Hobbit & The Lord Of The Rings`,"J. R. R. Tolkien","samaoppai", "T", "800"],
         },
         { 
             id: 'product28',
@@ -159,7 +159,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Rowling J. K.",
             seller : "NEOSELLERS",
-            type : ['Fantasy',`Harry Potter`, "Rowling J. K.","NEOSELLERS"],
+            type : ['Fantasy',`Harry Potter`, "Rowling J. K.","NEOSELLERS", "H", "2300"],
         },
         { 
             id: 'product29',
@@ -180,7 +180,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Lewis C. S.",
             seller : "BOOKSWAGONN",
-            type : ['Fantasy',`The Chronicles of Narnia`,"Lewis C. S.", "BOOKSWAGONN"],
+            type : ['Fantasy',`The Chronicles of Narnia`,"Lewis C. S.", "BOOKSWAGONN","T", "4300"],
         }
         ,
         { 
@@ -202,7 +202,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             description: "Spanning a lifetime of love and loss, crossing borders and oceans, Atlas: The Story of Pa Salt, co-authored by her son Harry Whittaker, draws Lucinda Riley's Seven Sisters series to its stunning, unforgettable conclusion. 1928, Paris A boy is found, moments from death, and taken in by a kindly family. Gentle, precocious, talented, he flourishes in his new home, and the family show him a life he hadn't dreamed possible. But he refuses to speak a word about who he really is. As he grows into a young man, falling in love and taking classes at the prestigious Conservatoire de Paris, he can almost forget the terrors of his past, or the promise he has vowed to keep. But across Europe an evil is rising, and no-one's safety is certain. In his heart, he knows the time will come where he must flee once more. 2008, the Aegean The seven sisters are gathered together for the first time, on board the Titan to say a final goodbye to the enigmatic father they loved so dearly. To the surprise of everyone, it is the missing sister who Pa Salt has chosen to entrust with the clue to their pasts. But for every truth revealed, another question emerges. The sisters must confront the idea that their adored father was someone they barely knew. And even more shockingly: that these long-buried secrets may still have consequences for them today.",
             discount: '10% Off', 
             tagline: 'Free Delivery',
-            type : ['Fiction', "Atlas","Riley Lucinda","Amazing Buy" ],
+            type : ['Fiction', "Atlas","Riley Lucinda","Amazing Buy","A", "750" ],
         },
         { 
             id: 'product3',
@@ -223,7 +223,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Hot Deal' ,
             author: "Haynes Natalie",
             seller : "GlobalRetailVentures",
-            type : ['Fiction','Stone Blind',"Haynes Natalie", "GlobalRetailVentures"],
+            type : ['Fiction','Stone Blind',"Haynes Natalie", "GlobalRetailVentures", "S", "580"],
         },
         { 
             id: 'product4',
@@ -244,7 +244,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery' ,
             author: "Blake Olivie",
             seller : "AmazingBuy",
-            type : ['Fiction',"One For My Enemy","Blake Olivie","AmazingBuy"],
+            type : ['Fiction',"One For My Enemy","Blake Olivie","AmazingBuy", "O", "560"],
         },
         { 
             id: 'product5',
@@ -265,7 +265,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Carter Eva",
             seller : "BOOKSWAGONN",
-            type : ['Fiction','Owner of a Lonely Heart',"Carter Eva","BOOKSWAGONN",], 
+            type : ['Fiction','Owner of a Lonely Heart',"Carter Eva","BOOKSWAGONN","O", "1250"], 
         },
         { 
             id: 'product6',
@@ -286,7 +286,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "DR A P J Abdul Kalam",
             seller : "Sumitbookstor1",
-            type : ['Biography', 'Wings of Fire',"DR A P J Abdul Kalam","Sumitbookstor1"], 
+            type : ['Biography', 'Wings of Fire',"DR A P J Abdul Kalam","Sumitbookstor1", "W", "180"], 
         },
         { 
             id: 'product7',
@@ -307,7 +307,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "A.K. Gandhi",
             seller : "BestsellingBooks",
-            type : ['Biography','Ratan Tata A Complete Biography',"A.K. Gandhi","BestsellingBooks"], 
+            type : ['Biography','Ratan Tata A Complete Biography',"A.K. Gandhi","BestsellingBooks","R", "250"], 
         },
         { 
             id: 'product8',
@@ -328,7 +328,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Isaacson Walter",
             seller : "BOOKSWAGONN",
-            type : ['Biography','Steve Jobs',"Isaacson Walter","BOOKSWAGONN",], 
+            type : ['Biography','Steve Jobs',"Isaacson Walter","BOOKSWAGONN","S", "1650"], 
         },
         { 
             id: 'product9',
@@ -349,7 +349,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Yousafzai Malala",
             seller : "AmazingBuy",
-            type : ['Biography','I Am Malala',"Yousafzai Malala","AmazingBuy",], 
+            type : ['Biography','I Am Malala',"Yousafzai Malala","AmazingBuy","I", "350"], 
         },
         { 
             id: 'product10',
@@ -370,7 +370,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Obama Michelle",
             seller : "Repro Books on Demand",
-            type : ['Biography','Becoming',"Obama Michelle","Repro Books on Demand",], 
+            type : ['Biography','Becoming',"Obama Michelle","Repro Books on Demand","B","500"], 
         },
         { 
             id: 'product11',
@@ -391,7 +391,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Gillian Flynn",
             seller : "Amanbooksmart",
-            type : ['Mistory','Gone Girl', "Gillian Flynn","Amanbooksmart"], 
+            type : ['Mistory','Gone Girl', "Gillian Flynn","Amanbooksmart", "G", "200"], 
         },
         { 
             id: 'product12',
@@ -412,7 +412,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Agatha Christie",
             seller : "Dunagiribookstore",
-            type : ['Mistory','Murder On The Orient Express', "Agatha Christie","Dunagiribookstore"], 
+            type : ['Mistory','Murder On The Orient Express', "Agatha Christie","Dunagiribookstore","M", "250"], 
         },
         { 
             id: 'product13',
@@ -433,7 +433,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Brown Dan",
             seller : "NSPRetail",
-            type : ['Mistory','The Da Vinci Code',"Brown Dan","NSPRetail"], 
+            type : ['Mistory','The Da Vinci Code',"Brown Dan","NSPRetail", "T", "350" ], 
         },
         { 
             id: 'product14',
@@ -454,7 +454,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Du Maurier Daphne",
             seller : "AmazingBuy",
-            type : ['Mistory','Rebecca', "Du Maurier Daphne","AmazingBuy"], 
+            type : ['Mistory','Rebecca', "Du Maurier Daphne","AmazingBuy", "R","350"], 
         },
         { 
             id: 'product15',
@@ -475,7 +475,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Prose Nita",
             seller : "BOOKSWAGONN",
-            type : ['Mistory','The Maid',"Prose Nita","BOOKSWAGONN"], 
+            type : ['Mistory','The Maid',"Prose Nita","BOOKSWAGONN", "T","2000"], 
         },
         { 
             id: 'product16',
@@ -496,7 +496,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Robert T. Kiyosaki",
             seller : "SUGSHAANnet",
-            type : ['Money','Rich Dad Poor Dad',"Robert T. Kiyosaki","SUGSHAANnet"],
+            type : ['Money','Rich Dad Poor Dad',"Robert T. Kiyosaki","SUGSHAANnet", "R", "350"],
         },
         { 
             id: 'product17',
@@ -517,7 +517,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Graham Benjamin",
             seller : "krishnastoreCompany",
-            type : ['Money','The Intelligent Investor',"Graham Benjamin","krishnastoreCompany"],
+            type : ['Money','The Intelligent Investor',"Graham Benjamin","krishnastoreCompany", "T", "500"],
         },
         { 
             id: 'product18',
@@ -538,7 +538,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "George S. Clason",
             seller : "TDVentures",
-            type : ['Money','The Richest Man in Babylon',"George S. Clason","TDVentures"],
+            type : ['Money','The Richest Man in Babylon',"George S. Clason","TDVentures", "T", "300"],
         },
         { 
             id: 'product19',
@@ -559,7 +559,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Thomas J",
             seller : "Seagroups",
-            type : ['Money','The Millionaire Next Door',"Thomas J","Seagroups"],
+            type : ['Money','The Millionaire Next Door',"Thomas J","Seagroups", "T", "250"],
         },
         { 
             id: 'product20',
@@ -580,7 +580,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Robbins Tony",
             seller : "VIKASONNET",
-            type : ['Money','Money Master the Game',"Robbins Tony","VIKASONNET"],
+            type : ['Money','Money Master the Game',"Robbins Tony","VIKASONNET", "M", "3000"],
         },
         { 
             id: 'product21',
@@ -601,7 +601,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Hill Napoleon",
             seller : "SrishtiPD",
-            type : ['Success','Think and Grow Rich',"Hill Napoleon","SrishtiPD"],
+            type : ['Success','Think and Grow Rich',"Hill Napoleon","SrishtiPD", "T", "200"],
         },
         { 
             id: 'product22',
@@ -622,7 +622,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Daniel Kahneman",
             seller : "FINDINGBOOKS1",
-            type : ['Success','Thinking, Fast And Slow',"Daniel Kahneman","FINDINGBOOKS1"],
+            type : ['Success','Thinking, Fast And Slow',"Daniel Kahneman","FINDINGBOOKS1", "T", "300"],
         },
         { 
             id: 'product23',
@@ -643,7 +643,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "R. Stephen Covey",
             seller : "Seagroups",
-            type : ['Success',`The 7 Habits Of Highly Effective People`,"R. Stephen Covey","Seagroups"],
+            type : ['Success',`The 7 Habits Of Highly Effective People`,"R. Stephen Covey","Seagroups","T", "200"],
         },
         { 
             id: 'product24',
@@ -664,7 +664,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Robbins Anthony",
             seller : "OverseasOnlineShop",
-            type : ['Success',`Awaken the Giant within`,"Robbins Anthony","OverseasOnlineShop"],
+            type : ['Success',`Awaken the Giant within`,"Robbins Anthony","OverseasOnlineShop","A", "1500"],
         },
         { 
             id: 'product25',
@@ -685,7 +685,7 @@ export const sellerArray = ["AmazingBuy","Amanbooksmart","BOOKSWAGONN","Bestsell
             tagline: 'Free Delivery',
             author: "Genric Author",
             seller : "Micybook",
-            type : ['Success',`The Power Of Habit`,"Genric Author","Micybook"],
+            type : ['Success',`The Power Of Habit`,"Genric Author","Micybook","T", "200"],
         },
         
     ];
