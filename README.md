@@ -21,7 +21,7 @@ This website offers it's users various e-commerce services and facility thoes ar
 ## Deployment
 
 This project Frontend is Deployed at Netlify.com and Backend is Deployed at Render.com
-- [View Project in Browser](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+- [View Project in Browser](https://wishbook.netlify.app)
 
 
 
