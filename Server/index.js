@@ -1,7 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-import {defaultData} from "./defaultData.js";
 import router from "./routes/routes.js";
 import cors from "cors";
 import bodyParser from "body-parser";
@@ -33,5 +32,3 @@ app.listen(process.env.PORT, ()=>{
     console.log("server is running at port "+process.env.PORT);
 })
 
-//function used to insert data in database initially
-// defaultData();

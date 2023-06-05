@@ -1,8 +1,5 @@
 import mongoose from "mongoose";
 
-// const mongoose = require("mongoose");
-// const { DefaultSerializer } = require("v8");
-
 
 const productSchema = new mongoose.Schema({
     id:{type:String, required:true, unique: true},
